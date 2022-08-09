@@ -1,4 +1,4 @@
-Blank MEAN Stack Project
+Portfolio Page
 
 ng serve is on port 4200
 node/express server is on port 3000
