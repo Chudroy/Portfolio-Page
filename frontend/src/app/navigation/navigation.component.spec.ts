@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SideNavComponent } from './side-nav.component';
+import { SideNavComponent } from './navigation.component';
 
 describe('SideNavComponent', () => {
   let component: SideNavComponent;
@@ -8,9 +8,8 @@ describe('SideNavComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SideNavComponent ]
-    })
-    .compileComponents();
+      declarations: [SideNavComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(SideNavComponent);
     component = fixture.componentInstance;

@@ -1,4 +1,11 @@
 body {
-  overflow: hidden;
   margin: 0;
+}
+
+.full-page {
+  height: 94vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
