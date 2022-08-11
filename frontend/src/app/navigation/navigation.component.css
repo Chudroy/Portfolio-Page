@@ -1,3 +1,7 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
 .example-container {
   display: flex;
   flex-direction: column;
@@ -10,7 +14,7 @@
 
 .example-is-mobile .example-toolbar {
   position: fixed;
-  /* Make sure the toolbar will stay on top of the content as it scrolls past. */
+  min-height: 6vh;
   z-index: 2;
 }
 

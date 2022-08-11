@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { MediaMatcher } from '@angular/cdk/layout';
 import { ChangeDetectorRef, OnDestroy } from '@angular/core';
+import { Location } from '@angular/common';
 @Component({
   selector: 'app-navigation',
   templateUrl: './navigation.component.html',
@@ -23,7 +24,11 @@ export class NavigationComponent implements OnDestroy {
 
   private _mobileQueryListener: () => void;
 
-  constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher) {
+  constructor(
+    changeDetectorRef: ChangeDetectorRef,
+    media: MediaMatcher,
+    private location: Location
+  ) {
     this.mobileQuery = media.matchMedia('(max-width: 600px)');
     this._mobileQueryListener = () => changeDetectorRef.detectChanges();
     this.mobileQuery.addListener(this._mobileQueryListener);
@@ -31,5 +36,11 @@ export class NavigationComponent implements OnDestroy {
 
   ngOnDestroy(): void {
     this.mobileQuery.removeListener(this._mobileQueryListener);
+  }
+
+  scroll(el: string) {
+    const scrollTo = document.getElementById(el);
+    scrollTo?.scrollIntoView({ behavior: 'smooth' });
+    this.location.replaceState(el);
   }
 }

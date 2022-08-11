@@ -1,3 +1,16 @@
 #work {
-  background-color: violet;
+  background-color: transparent;
+}
+
+#work-description {
+  max-width: 50vw;
+  text-align: justify;
+}
+
+#work-description h2 {
+  text-align: center;
+}
+
+.work-card {
+  max-width: 50vw;
 }

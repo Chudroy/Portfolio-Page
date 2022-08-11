@@ -10,7 +10,6 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { WorkComponent } from './work/work.component';
 import { ContactComponent } from './contact/contact.component';
 import { NavigationComponent } from './navigation/navigation.component';
-import { FullPageComponent } from './full-page/full-page.component';
 
 // Custom Services
 
@@ -23,6 +22,10 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { MatListModule } from '@angular/material/list';
 import { LayoutModule } from '@angular/cdk/layout';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { ScrollProgressBarComponent } from './scroll-progress-bar/scroll-progress-bar.component';
+import { ScrollProgressDirective } from './diretives/scroll-progress.directive';
 
 @NgModule({
   declarations: [
@@ -30,9 +33,10 @@ import { LayoutModule } from '@angular/cdk/layout';
     AboutMeComponent,
     WorkComponent,
     ContactComponent,
-    FullPageComponent,
     NavigationComponent,
     PortfolioComponent,
+    ScrollProgressBarComponent,
+    ScrollProgressDirective,
   ],
   imports: [
     BrowserModule,
@@ -46,6 +50,8 @@ import { LayoutModule } from '@angular/cdk/layout';
     MatSidenavModule,
     MatListModule,
     LayoutModule,
+    MatTabsModule,
+    MatProgressBarModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

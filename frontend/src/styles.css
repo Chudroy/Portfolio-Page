@@ -4,8 +4,25 @@ body {
 
 .full-page {
   height: 94vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
+
+/* mat-sidenav-content {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  background-image: url("assets/puppy-development.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: transparent;
+} */
+
+/* app-portfolio {
+  background-color: blue;
+  background-image: url("assets/puppy-development.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+} */
