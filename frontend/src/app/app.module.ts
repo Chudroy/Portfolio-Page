@@ -28,6 +28,7 @@ import { scrollProgressBarComponent } from './scroll-progress-bar/scroll-progres
 import { scrollProgressDirective } from './diretives/scroll-progress.directive';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatDividerModule } from '@angular/material/divider';
+import { MatChipsModule } from '@angular/material/chips';
 @NgModule({
   declarations: [
     AppComponent,
@@ -55,6 +56,7 @@ import { MatDividerModule } from '@angular/material/divider';
     MatProgressBarModule,
     MatGridListModule,
     MatDividerModule,
+    MatChipsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

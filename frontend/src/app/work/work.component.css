@@ -10,7 +10,6 @@
   width: 80vw;
   max-width: 800px;
   text-align: justify;
-  /* flex-grow: 1; */
 }
 
 #projects {
@@ -19,8 +18,28 @@
   flex-direction: column;
 }
 
-.container {
-  max-height: 100%;
+#web-dev-bg {
+  background: url("../../assets/blurred/neighbourhood_website_thumbnail blurred.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#game-dev-bg {
+  background: url("../../assets/blurred/GET Inside blurred.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#creative-coding-bg {
+  background: url("../../assets/blurred/creative coding thumbnail blurred.jpg");
+  background-position: center;
+  background-size: contain;
+}
+
+#art-bg {
+  background: url("../../assets/blurred/thomas_attractor blurred.jpg");
+  background-position: center;
+  background-size: contain;
 }
 
 .work-card {
@@ -30,13 +49,15 @@
   flex-direction: column;
 }
 
+.img-bg {
+  display: flex;
+  justify-content: center;
+}
+
 .work-card-img {
   max-height: 300px;
   width: auto;
   align-self: center;
-}
-
-.container {
 }
 
 mat-tab-group {

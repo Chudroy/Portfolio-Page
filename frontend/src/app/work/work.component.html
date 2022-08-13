@@ -18,12 +18,13 @@
     <mat-tab-group>
       <mat-tab label="Web Development">
         <mat-card class="work-card">
-          <img
-            mat-card-image
-            class="work-card-img"
-            src="../../assets/neighbourhood_website_thumbnail.png"
-            alt="neighbourhood_website_thumbnail"
-          />
+          <div mat-card-image id="web-dev-bg" class="img-bg">
+            <img
+              class="work-card-img"
+              src="../../assets/neighbourhood_website_thumbnail.png"
+              alt="neighbourhood_website_thumbnail"
+            />
+          </div>
           <mat-card-title>Bilbao Barrios</mat-card-title>
           <mat-card-subtitle
             >Dedicated to the neighbourhoods of central
@@ -34,25 +35,36 @@
               A forum aimed towards connecting the citizens of Bilbao, Basque
               Country. A user can create a post linked to a specific
               neighbourhood, and filter posts by neighbourhood or the
-              encompassing district.
+              encompassing district. This website contains all features for a
+              fully functional, secure website.
             </p>
           </mat-card-content>
           <mat-divider inset></mat-divider>
           <mat-card-actions>
-            <button mat-button>LIKE</button>
-            <button mat-button>SHARE</button>
+            <button mat-button>GITHUB REPO</button>
+            <button mat-button>LIVE WEBSITE</button>
           </mat-card-actions>
-          <mat-card-footer> </mat-card-footer>
+          <mat-chip-list
+            ><mat-chip>Mongo</mat-chip>
+            <mat-chip>Express</mat-chip>
+            <mat-chip>Node</mat-chip>
+            <mat-chip>Mongoose</mat-chip>
+            <mat-chip>Heroku</mat-chip>
+            <mat-chip>Cloudinary</mat-chip>
+            <mat-chip>Helmet.js</mat-chip>
+            <mat-chip>EJS</mat-chip>
+          </mat-chip-list>
         </mat-card>
       </mat-tab>
       <mat-tab label="Game Development">
         <mat-card class="work-card">
-          <img
-            class="work-card-img"
-            mat-card-image
-            src="../../assets/GET Inside.jpeg"
-            alt="neighbourhood_website_thumbnail"
-          />
+          <div mat-card-image id="game-dev-bg" class="img-bg">
+            <img
+              class="work-card-img"
+              src="../../assets/GET Inside.jpeg"
+              alt="neighbourhood_website_thumbnail"
+            />
+          </div>
           <mat-card-title>Get Inside</mat-card-title>
           <mat-card-subtitle>2D Horror Shooter</mat-card-subtitle>
           <mat-card-content>
@@ -66,20 +78,55 @@
           </mat-card-content>
           <mat-divider inset></mat-divider>
           <mat-card-actions>
-            <button mat-button>LIKE</button>
-            <button mat-button>SHARE</button>
+            <button mat-button>GITHUB REPO</button>
+            <button mat-button>PLAY</button>
           </mat-card-actions>
-          <mat-card-footer> </mat-card-footer>
+          <mat-chip-list
+            ><mat-chip>Unity</mat-chip>
+            <mat-chip>C#</mat-chip>
+            <mat-chip>Aseprite</mat-chip>
+          </mat-chip-list>
         </mat-card>
       </mat-tab>
       <mat-tab label="Creative Coding">
         <mat-card class="work-card">
-          <img
-            class="work-card-img"
-            mat-card-image
-            src="../../assets/thomas_attractor.png"
-            alt="neighbourhood_website_thumbnail"
-          />
+          <div mat-card-image id="creative-coding-bg" class="img-bg">
+            <img
+              class="work-card-img"
+              src="../../assets/creative coding thumbnail.png"
+              alt="neighbourhood_website_thumbnail"
+            />
+          </div>
+          <mat-card-title>Particle Attraction</mat-card-title>
+          <mat-card-subtitle>Particle Simulations</mat-card-subtitle>
+          <mat-card-content>
+            <p>
+              Procedurally Generated animation using the
+              <a href="https://p5js.org/"> P5.js </a>
+              library. Semi-translucent particles are attracted to gravitational
+              focal points, producing surprisingly complex symmetrical imagery.
+            </p>
+          </mat-card-content>
+          <mat-divider inset></mat-divider>
+          <mat-card-actions>
+            <button mat-button>GITHUB REPO</button>
+            <button mat-button>INSTAGRAM POST</button>
+          </mat-card-actions>
+          <mat-chip-list
+            ><mat-chip>P5.js</mat-chip>
+            <mat-chip>Javascript</mat-chip>
+          </mat-chip-list>
+        </mat-card>
+      </mat-tab>
+      <mat-tab label="Art">
+        <mat-card class="work-card">
+          <div mat-card-image id="art-bg" class="img-bg">
+            <img
+              class="work-card-img"
+              src="../../assets/thomas_attractor.png"
+              alt="neighbourhood_website_thumbnail"
+            />
+          </div>
           <mat-card-title>Strange Attractors</mat-card-title>
           <mat-card-subtitle>3D Mathematical models</mat-card-subtitle>
           <mat-card-content>
@@ -99,10 +146,13 @@
           </mat-card-content>
           <mat-divider inset></mat-divider>
           <mat-card-actions>
-            <button mat-button>LIKE</button>
-            <button mat-button>SHARE</button>
+            <button mat-button>GITHUB REPO</button>
+            <button mat-button>INSTAGRAM POST</button>
           </mat-card-actions>
-          <mat-card-footer> </mat-card-footer>
+          <mat-chip-list
+            ><mat-chip>Blender</mat-chip>
+            <mat-chip>Animation Nodes</mat-chip></mat-chip-list
+          >
         </mat-card>
       </mat-tab>
     </mat-tab-group>
