@@ -13,6 +13,7 @@
 }
 
 .example-is-mobile .example-toolbar {
+  /* THE PROBLEM IS HERE FOR THE NAVBAR IN MOBILE VIEW */
   position: fixed;
   min-height: 6vh;
   z-index: 2;

@@ -1,4 +1,4 @@
-<div class="example-container" [class.example-is-mobile]="mobileQuery.matches">
+<div class="example-container">
   <mat-toolbar color="" class="example-toolbar">
     <button fxHide.gt-xs="true" mat-icon-button (click)="snav.toggle()">
       <mat-icon>menu</mat-icon>
@@ -10,7 +10,7 @@
         mat-button
         class="example-icon favorite-icon"
         aria-label="Example icon-button with heart icon"
-        (click)="scroll('about-me')"
+        (click)="scroll('app-about-me')"
       >
         About
       </button>
@@ -37,7 +37,6 @@
 
   <mat-sidenav-container
     class="example-sidenav-container"
-    [style.marginTop.px]="mobileQuery.matches ? 56 : 0"
     [hasBackdrop]="mobileQuery.matches ? 'true' : 'false'"
   >
     <mat-sidenav
@@ -53,7 +52,7 @@
         <a mat-list-item (click)="scroll('contact')">Contact</a>
       </mat-nav-list>
     </mat-sidenav>
-    <mat-sidenav-content appScrollProgress>
+    <mat-sidenav-content appscrollProgress>
       <ng-content></ng-content>
     </mat-sidenav-content>
   </mat-sidenav-container>

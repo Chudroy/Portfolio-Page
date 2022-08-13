@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import { ScrollProgressBarService } from '../shared/services/scroll-progress-bar.service';
+import { scrollProgressBarService } from '../shared/services/scroll-progress-bar.service';
 @Component({
   selector: 'app-scroll-progress-bar',
   templateUrl: './scroll-progress-bar.component.html',
   styleUrls: ['./scroll-progress-bar.component.css'],
 })
-export class ScrollProgressBarComponent implements OnInit {
+export class scrollProgressBarComponent implements OnInit {
   progressValue!: number;
 
-  constructor(private scrollProgressBarService: ScrollProgressBarService) {}
+  constructor(private scrollProgressBarService: scrollProgressBarService) {}
 
   ngOnInit() {
     this.scrollProgressBarService.scrollProgress$.subscribe((value: number) => {

@@ -1,10 +1,10 @@
 import { Directive, HostListener } from '@angular/core';
-import { ScrollProgressBarService } from '../shared/services/scroll-progress-bar.service';
+import { scrollProgressBarService } from '../shared/services/scroll-progress-bar.service';
 @Directive({
-  selector: '[appScrollProgress]',
+  selector: '[appscrollProgress]',
 })
-export class ScrollProgressDirective {
-  constructor(private scrollProgressBarService: ScrollProgressBarService) {}
+export class scrollProgressDirective {
+  constructor(private scrollProgressBarService: scrollProgressBarService) {}
   @HostListener('scroll', ['$event'])
   doSomething(event: any) {
     let winScroll = event.currentTarget.scrollTop;
@@ -12,7 +12,7 @@ export class ScrollProgressDirective {
       event.currentTarget.scrollHeight - event.currentTarget.clientHeight;
     let scrolled = (winScroll / height) * 100;
 
-    this.scrollProgressBarService.setScrollProgress(scrolled);
+    this.scrollProgressBarService.setscrollProgress(scrolled);
     // document.getElementById('scrollBar')!.style.width = scrolled + '%';
   }
 }

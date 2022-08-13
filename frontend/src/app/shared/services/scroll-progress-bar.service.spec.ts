@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { ScrollProgressBarService } from './scroll-progress-bar.service';
+import { scrollProgressBarService } from './scroll-progress-bar.service';
 
-describe('ScrollProgressBarService', () => {
-  let service: ScrollProgressBarService;
+describe('scrollProgressBarService', () => {
+  let service: scrollProgressBarService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(ScrollProgressBarService);
+    service = TestBed.inject(scrollProgressBarService);
   });
 
   it('should be created', () => {

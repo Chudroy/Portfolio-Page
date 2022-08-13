@@ -1,8 +1,8 @@
-import { ScrollProgressDirective } from './scroll-progress.directive';
+import { scrollProgressDirective } from './scroll-progress.directive';
 
-describe('ScrollProgressDirective', () => {
+describe('scrollProgressDirective', () => {
   it('should create an instance', () => {
-    const directive = new ScrollProgressDirective();
+    const directive = new scrollProgressDirective();
     expect(directive).toBeTruthy();
   });
 });

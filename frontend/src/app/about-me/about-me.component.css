@@ -6,11 +6,11 @@
 }
 
 #about-img {
-  max-height: 300px;
-  width: auto;
+  max-width: 500px;
+  height: auto;
 }
 
 #about-card {
-  max-width: 500px;
+  max-width: 600px;
   text-align: justify;
 }

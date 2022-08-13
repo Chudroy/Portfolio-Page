@@ -24,9 +24,10 @@ import { MatListModule } from '@angular/material/list';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
-import { ScrollProgressBarComponent } from './scroll-progress-bar/scroll-progress-bar.component';
-import { ScrollProgressDirective } from './diretives/scroll-progress.directive';
-
+import { scrollProgressBarComponent } from './scroll-progress-bar/scroll-progress-bar.component';
+import { scrollProgressDirective } from './diretives/scroll-progress.directive';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatDividerModule } from '@angular/material/divider';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,8 +36,8 @@ import { ScrollProgressDirective } from './diretives/scroll-progress.directive';
     ContactComponent,
     NavigationComponent,
     PortfolioComponent,
-    ScrollProgressBarComponent,
-    ScrollProgressDirective,
+    scrollProgressBarComponent,
+    scrollProgressDirective,
   ],
   imports: [
     BrowserModule,
@@ -52,6 +53,8 @@ import { ScrollProgressDirective } from './diretives/scroll-progress.directive';
     LayoutModule,
     MatTabsModule,
     MatProgressBarModule,
+    MatGridListModule,
+    MatDividerModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

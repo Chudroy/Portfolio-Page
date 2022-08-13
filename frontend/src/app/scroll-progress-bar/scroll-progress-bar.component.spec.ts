@@ -1,18 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ScrollProgressBarComponent } from './scroll-progress-bar.component';
+import { scrollProgressBarComponent } from './scroll-progress-bar.component';
 
-describe('ScrollProgressBarComponent', () => {
-  let component: ScrollProgressBarComponent;
-  let fixture: ComponentFixture<ScrollProgressBarComponent>;
+describe('scrollProgressBarComponent', () => {
+  let component: scrollProgressBarComponent;
+  let fixture: ComponentFixture<scrollProgressBarComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ScrollProgressBarComponent ]
-    })
-    .compileComponents();
+      declarations: [scrollProgressBarComponent],
+    }).compileComponents();
 
-    fixture = TestBed.createComponent(ScrollProgressBarComponent);
+    fixture = TestBed.createComponent(scrollProgressBarComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
