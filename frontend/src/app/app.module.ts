@@ -29,6 +29,7 @@ import { scrollProgressDirective } from './diretives/scroll-progress.directive';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatChipsModule } from '@angular/material/chips';
+import { ProjectListComponent } from './project-list/project-list.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,6 +40,7 @@ import { MatChipsModule } from '@angular/material/chips';
     PortfolioComponent,
     scrollProgressBarComponent,
     scrollProgressDirective,
+    ProjectListComponent,
   ],
   imports: [
     BrowserModule,
