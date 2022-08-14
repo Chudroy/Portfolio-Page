@@ -1,8 +1,6 @@
-
-
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
-@use '@angular/material' as mat;
+@use "@angular/material" as mat;
 // Plus imports for other components in your app.
 
 // Include the common styles for Angular Material. We include this here so that you only
@@ -21,41 +19,85 @@ $light-warn: mat.define-palette(mat.$red-palette);
 
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
-$light-theme: mat.define-light-theme((
-  color: (
-    primary: $light-primary,
-    accent: $light-accent,
-    warn: $light-warn,
+$light-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $light-primary,
+      accent: $light-accent,
+      warn: $light-warn,
+    ),
   )
-));
+);
 
 // Define a dark theme
-$dark-primary: mat.define-palette(mat.$pink-palette);
-$dark-accent: mat.define-palette(mat.$blue-grey-palette);
-$dark-theme: mat.define-dark-theme((
- color: (
-   primary: $dark-primary,
-   accent: $dark-accent,
- )
-));
 
-// Include theme styles for core and each component used in your app.
-// Alternatively, you can import and @include the theme mixins for each component
-// that you are using.
-// @include mat.all-component-themes($light-theme);
+$dark-cyan-palette: (
+  50: #edeff8,
+  100: #d2dae5,
+  200: #b7c0d0,
+  300: #9ba7bb,
+  400: #8593aa,
+  500: #70809a,
+  600: #627188,
+  700: #515e71,
+  800: #414b5b,
+  900: #2e3643,
+  contrast: (
+    50: #ffffff,
+    100: #ffffff,
+    200: #ffffff,
+    300: #ffffff,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+  ),
+);
 
-// .my-light-theme {
-//   @include mat.core-color($light-theme);
-//   @include mat.button-color($light-theme);
-//  }
+$orange-palette: (
+  50: #fef8df,
+  100: #fdebaf,
+  200: #fcde7b,
+  300: #fbd244,
+  400: #fac713,
+  500: #f9bd00,
+  600: #faaf00,
+  700: #fa9c00,
+  800: #fb8b00,
+  900: #fb6a00,
+  contrast: (
+    50: #e0e0e0,
+    100: #b3b3b3,
+    200: #808080,
+    300: #4d4d4d,
+    400: #262626,
+    500: #000000,
+    600: #000000,
+    700: #000000,
+    800: #000000,
+    900: #000000,
+  ),
+);
 
-// Apply the dark theme by default
+// $dark-primary: mat.define-palette(mat.$pink-palette);
+// $dark-accent: mat.define-palette(mat.$blue-grey-palette);
+
+$dark-primary: mat.define-palette($dark-cyan-palette);
+$dark-accent: mat.define-palette($orange-palette);
+
+$dark-theme: mat.define-dark-theme(
+  (
+    color: (
+      primary: $dark-primary,
+      accent: $dark-accent,
+    ),
+  )
+);
+
 @include mat.all-component-themes($dark-theme);
 
-
-// Apply the light theme only when the `.my-light-theme` CSS class is applied
-// to an ancestor element of the components (such as `body`).
 .my-light-theme {
- @include mat.all-component-themes($light-theme);
+  @include mat.all-component-themes($light-theme);
 }
-

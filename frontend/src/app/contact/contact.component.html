@@ -34,26 +34,32 @@
       ></textarea>
       <mat-error *ngIf="email.invalid">{{ emailError() }}</mat-error>
     </mat-form-field>
-    <button mat-raised-button>Send Message</button>
+    <button mat-raised-button color="accent">Send Message</button>
   </form>
 
   <div id="curriculum">
     <h2>Check out my curriculum</h2>
-    <button mat-raised-button>Get CV</button>
+    <button mat-raised-button color="accent">Get CV</button>
   </div>
 
   <div id="social-media">
     <h2>Or find me on the internet</h2>
     <div id="social-media-icons">
-      <a href="" color="warn"
-        ><i class="fab fa-github fa-2x social-media-icon"></i
+      <a href="">
+        <mat-icon color="accent"
+          ><i class="fa-brands fa-github fa-lg"></i></mat-icon
       ></a>
-      <a href=""
-        ><i class="fab fa-stack-overflow fa-2x social-media-icon"></i
+      <a href="">
+        <mat-icon color="accent"
+          ><i class="fa-brands fa-linkedin fa-lg"></i></mat-icon
       ></a>
-      <a href=""><i class="fab fa-linkedin-in fa-2x social-media-icon"></i></a>
-      <a href=""
-        ><i class="fa-brands fa-instagram fa-2x social-media-icon"></i
+      <a href="">
+        <mat-icon color="accent"
+          ><i class="fa-brands fa-stack-overflow fa-lg"></i></mat-icon
+      ></a>
+      <a href="">
+        <mat-icon color="accent"
+          ><i class="fa-brands fa-instagram fa-lg"></i></mat-icon
       ></a>
     </div>
   </div>

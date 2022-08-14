@@ -48,6 +48,11 @@
   justify-content: space-around;
 }
 
-.social-media-icon {
-  color: grey;
+mat-icon {
+  height: 30px;
+  width: 30px;
 }
+
+/* .social-media-icon {
+  color: grey;
+} */
