@@ -6,13 +6,8 @@ import { BehaviorSubject, Observable } from 'rxjs';
 })
 export class scrollProgressBarService {
   scrollProgress$: BehaviorSubject<number> = new BehaviorSubject<number>(0);
-  // scrollProgress$: Observable<number> = this.scrollProgress.asObservable();
 
-  constructor() {
-    this.scrollProgress$.subscribe((value: number) => {
-      return this.scrollProgress$;
-    });
-  }
+  constructor() {}
 
   setscrollProgress(v: any) {
     // console.log('Scroll %', v);

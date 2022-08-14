@@ -1,3 +1,53 @@
 #contact {
   background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#curriculum {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  max-width: 500px;
+  margin-bottom: 3rem;
+}
+
+#contact-id {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#contact-name {
+  margin-right: 1rem;
+  flex-grow: 1;
+}
+
+#contact-email {
+  flex-grow: 1;
+}
+
+#contact-message {
+  width: 100%;
+}
+
+#social-media-icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-media-icon {
+  color: grey;
 }

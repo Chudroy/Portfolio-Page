@@ -1,3 +1,22 @@
+#night-mode-btn {
+  margin-left: 1rem;
+}
+
+.menu-toggle-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-toggle {
+  margin-left: 1rem;
+}
+
+.menu-icon {
+  color: gray;
+  margin-right: 0.3rem;
+}
+
 .example-spacer {
   flex: 1 1 auto;
 }

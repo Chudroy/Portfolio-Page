@@ -21,7 +21,7 @@
 
   <div id="projects">
     <h2>Highlighted Projects</h2>
-    <mat-tab-group>
+    <mat-tab-group mat-align-tabs="center">
       <mat-tab label="Web Development">
         <mat-card class="work-card">
           <div mat-card-image id="web-dev-bg" class="img-bg">
@@ -51,14 +51,14 @@
             <button mat-button>LIVE WEBSITE</button>
           </mat-card-actions>
           <mat-chip-list
-            ><mat-chip>Mongo</mat-chip>
-            <mat-chip>Express</mat-chip>
-            <mat-chip>Node</mat-chip>
-            <mat-chip>Mongoose</mat-chip>
-            <mat-chip>Heroku</mat-chip>
-            <mat-chip>Cloudinary</mat-chip>
-            <mat-chip>Helmet.js</mat-chip>
-            <mat-chip>EJS</mat-chip>
+            ><mat-chip color="primary" selected>Mongo</mat-chip>
+            <mat-chip color="primary" selected>Express</mat-chip>
+            <mat-chip color="primary" selected>Node</mat-chip>
+            <mat-chip color="primary" selected>Mongoose</mat-chip>
+            <mat-chip color="accent" selected>Heroku</mat-chip>
+            <mat-chip color="accent" selected>Cloudinary</mat-chip>
+            <mat-chip color="accent" selected>Helmet.js</mat-chip>
+            <mat-chip color="accent" selected>EJS</mat-chip>
           </mat-chip-list>
         </mat-card>
       </mat-tab>
@@ -88,9 +88,9 @@
             <button mat-button>PLAY</button>
           </mat-card-actions>
           <mat-chip-list
-            ><mat-chip>Unity</mat-chip>
-            <mat-chip>C#</mat-chip>
-            <mat-chip>Aseprite</mat-chip>
+            ><mat-chip color="primary" selected>Unity</mat-chip>
+            <mat-chip color="primary" selected>C#</mat-chip>
+            <mat-chip color="accent" selected>Aseprite</mat-chip>
           </mat-chip-list>
         </mat-card>
       </mat-tab>
@@ -120,8 +120,7 @@
             <button mat-button>INSTAGRAM POST</button>
           </mat-card-actions>
           <mat-chip-list
-            ><mat-chip>P5.js</mat-chip>
-            <mat-chip>Javascript</mat-chip>
+            ><mat-chip color="primary" selected>P5.js</mat-chip>
           </mat-chip-list>
         </mat-card>
       </mat-tab>
@@ -157,8 +156,10 @@
             <button mat-button>INSTAGRAM POST</button>
           </mat-card-actions>
           <mat-chip-list
-            ><mat-chip>Blender</mat-chip>
-            <mat-chip>Animation Nodes</mat-chip></mat-chip-list
+            ><mat-chip color="primary" selected>Blender</mat-chip>
+            <mat-chip color="primary" selected
+              >Animation Nodes</mat-chip
+            ></mat-chip-list
           >
         </mat-card>
       </mat-tab>

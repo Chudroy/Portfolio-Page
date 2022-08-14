@@ -1,4 +1,5 @@
 #project-list {
+  margin-top: 3rem;
   background-color: transparent;
   display: flex;
   flex-direction: column;
@@ -14,10 +15,14 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  width: 80vw;
+  max-width: 1200px;
 }
 
 .project {
   margin: 8px;
-  width: 33.3vw;
-  max-width: 300px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }

@@ -11,7 +11,8 @@ import { WorkComponent } from './work/work.component';
 import { ContactComponent } from './contact/contact.component';
 import { NavigationComponent } from './navigation/navigation.component';
 
-// Custom Services
+// Forms Modules
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 // Angular Material Modules
 import { MatCardModule } from '@angular/material/card';
@@ -30,6 +31,10 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatChipsModule } from '@angular/material/chips';
 import { ProjectListComponent } from './project-list/project-list.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 @NgModule({
   declarations: [
     AppComponent,
@@ -59,6 +64,12 @@ import { ProjectListComponent } from './project-list/project-list.component';
     MatGridListModule,
     MatDividerModule,
     MatChipsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatMenuModule,
+    MatSlideToggleModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

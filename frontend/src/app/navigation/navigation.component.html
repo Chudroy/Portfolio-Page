@@ -1,10 +1,41 @@
 <div class="example-container">
-  <mat-toolbar color="" class="example-toolbar">
+  <mat-toolbar color="primary" class="example-toolbar">
     <button fxHide.gt-xs="true" mat-icon-button (click)="snav.toggle()">
       <mat-icon>menu</mat-icon>
     </button>
     <h1 class="example-app-name">Nicolás Garitagoitia</h1>
+    <button
+      mat-icon-button
+      [matMenuTriggerFor]="menu"
+      aria-label="Example icon-button with a menu"
+    >
+      <mat-icon>more_vert</mat-icon>
+    </button>
+
+    <mat-menu #menu="matMenu">
+      <div
+        mat-menu-item
+        class="menu-toggle-div"
+        (click)="$event.stopPropagation()"
+      >
+        <i class="fa-solid fa-moon fa-lg menu-icon"></i>Dark Mode
+        <mat-slide-toggle (change)="toggleDarkMode($event)" class="menu-toggle">
+        </mat-slide-toggle>
+      </div>
+
+      <button mat-menu-item [matMenuTriggerFor]="language">Language</button>
+      <mat-menu #language="matMenu">
+        <button mat-menu-item>English</button>
+        <button mat-menu-item>Castellano</button>
+      </mat-menu>
+    </mat-menu>
+
+    <div id="night-mode-btn">
+      <button mat-icon-button color="primary"></button>
+    </div>
+
     <span class="example-spacer"></span>
+
     <div fxHide.lt-sm="true">
       <button
         mat-button
@@ -29,6 +60,13 @@
         (click)="scroll('contact')"
       >
         Contact
+      </button>
+      <button
+        mat-button
+        class="example-icon"
+        aria-label="Example icon-button with share icon"
+      >
+        Curriculum
       </button>
     </div>
   </mat-toolbar>

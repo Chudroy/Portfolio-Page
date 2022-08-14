@@ -1,13 +1,60 @@
 <div id="contact" class="full-page">
-  <h2>Contact</h2>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id turpis
-    ut sem cursus facilisis tempor vel eros. Curabitur fringilla non libero vel
-    pellentesque. Phasellus semper ullamcorper pharetra. Nunc condimentum metus
-    vel massa vehicula, eu consequat risus blandit. Orci varius natoque
-    penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis sit
-    amet velit pretium, scelerisque eros eget, vulputate lectus. Proin
-    fermentum, mauris ac semper scelerisque, urna dolor commodo justo, dignissim
-    luctus eros lectus id.
-  </p>
+  <div id="contact-form-intro">
+    <h2>Get in touch</h2>
+  </div>
+
+  <form id="contact-form">
+    <div id="contact-id">
+      <mat-form-field id="contact-name" appearance="fill">
+        <mat-label>What's your name?</mat-label>
+        <input matInput placeholder="Nick" [formControl]="name" required />
+        <mat-error *ngIf="name.invalid">{{ nameError() }}</mat-error>
+      </mat-form-field>
+
+      <mat-form-field id="contact-email" appearance="fill">
+        <mat-label>Enter your email</mat-label>
+        <input
+          matInput
+          placeholder="pat@example.com"
+          [formControl]="email"
+          required
+        />
+        <mat-error *ngIf="email.invalid">{{ emailError() }}</mat-error>
+      </mat-form-field>
+    </div>
+
+    <mat-form-field id="contact-message" appearance="fill">
+      <mat-label>Leave a message</mat-label>
+      <textarea
+        rows="5"
+        matInput
+        [formControl]="message"
+        required
+        cdkTextareaAutosize
+      ></textarea>
+      <mat-error *ngIf="email.invalid">{{ emailError() }}</mat-error>
+    </mat-form-field>
+    <button mat-raised-button>Send Message</button>
+  </form>
+
+  <div id="curriculum">
+    <h2>Check out my curriculum</h2>
+    <button mat-raised-button>Get CV</button>
+  </div>
+
+  <div id="social-media">
+    <h2>Or find me on the internet</h2>
+    <div id="social-media-icons">
+      <a href="" color="warn"
+        ><i class="fab fa-github fa-2x social-media-icon"></i
+      ></a>
+      <a href=""
+        ><i class="fab fa-stack-overflow fa-2x social-media-icon"></i
+      ></a>
+      <a href=""><i class="fab fa-linkedin-in fa-2x social-media-icon"></i></a>
+      <a href=""
+        ><i class="fa-brands fa-instagram fa-2x social-media-icon"></i
+      ></a>
+    </div>
+  </div>
 </div>
