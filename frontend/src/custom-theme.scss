@@ -42,6 +42,10 @@ $dark-cyan-palette: (
   700: #515e71,
   800: #414b5b,
   900: #2e3643,
+  A100: #6296ff,
+  A200: #2f74ff,
+  A400: #0054fb,
+  A700: #004be1,
   contrast: (
     50: #ffffff,
     100: #ffffff,
@@ -56,17 +60,21 @@ $dark-cyan-palette: (
   ),
 );
 
-$orange-palette: (
-  50: #fef8df,
-  100: #fdebaf,
-  200: #fcde7b,
-  300: #fbd244,
-  400: #fac713,
-  500: #f9bd00,
-  600: #faaf00,
-  700: #fa9c00,
-  800: #fb8b00,
-  900: #fb6a00,
+$yellow-palette: (
+  50: #fafaf1,
+  100: #f2f2db,
+  200: #eae9c4,
+  300: #e2e0ac,
+  400: #dbda9a,
+  500: #d5d388,
+  600: #d0ce80,
+  700: #cac875,
+  800: #c4c26b,
+  900: #bab758,
+  A100: #ffffff,
+  A200: #fffeed,
+  A400: #fffdba,
+  A700: #fffca1,
   contrast: (
     50: #e0e0e0,
     100: #b3b3b3,
@@ -81,17 +89,52 @@ $orange-palette: (
   ),
 );
 
+$orange-palette: (
+  50: #faede1,
+  100: #f3d2b3,
+  200: #ebb581,
+  300: #e3974f,
+  400: #dd8029,
+  500: #d76a03,
+  600: #d36203,
+  700: #cd5702,
+  800: #c74d02,
+  900: #be3c01,
+  A100: #ffece6,
+  A200: #ffc6b3,
+  A400: #ff9f80,
+  A700: #ff8c67,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000,
+  ),
+);
+
 // $dark-primary: mat.define-palette(mat.$pink-palette);
 // $dark-accent: mat.define-palette(mat.$blue-grey-palette);
 
 $dark-primary: mat.define-palette($dark-cyan-palette);
-$dark-accent: mat.define-palette($orange-palette);
+$dark-accent: mat.define-palette($yellow-palette);
+$dark-warn: mat.define-palette($orange-palette);
 
 $dark-theme: mat.define-dark-theme(
   (
     color: (
       primary: $dark-primary,
       accent: $dark-accent,
+      warn: $dark-warn,
     ),
   )
 );
