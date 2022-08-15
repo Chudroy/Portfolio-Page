@@ -166,8 +166,176 @@ $orange-palette: (
   ),
 );
 
-$light-primary: mat.define-palette($dark-yellow-palette);
-$light-accent: mat.define-palette($light-cyan-palette);
+$green-primary-palette: (
+  50: #e5ebe9,
+  100: #bfccc8,
+  200: #94aba3,
+  300: #69897e,
+  400: #496f63,
+  500: #295647,
+  600: #244f40,
+  700: #1f4537,
+  800: #193c2f,
+  900: #0f2b20,
+  A100: #6affbe,
+  A200: #37ffa8,
+  A400: #04ff92,
+  A700: #00ea84,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #ffffff,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000,
+  ),
+);
+
+$green-accent-palette: (
+  50: #f7fcf9,
+  100: #ebf8ef,
+  200: #def4e5,
+  300: #d1efda,
+  400: #c7ebd2,
+  500: #bde8ca,
+  600: #b7e5c5,
+  700: #aee2bd,
+  800: #a6deb7,
+  900: #98d8ab,
+  A100: #ffffff,
+  A200: #ffffff,
+  A400: #ffffff,
+  A700: #f7fffa,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #000000,
+    600: #000000,
+    700: #000000,
+    800: #000000,
+    900: #000000,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000,
+  ),
+);
+
+/* For use in src/lib/core/theming/_palette.scss */
+$blue-primary-palette: (
+  50: #e5e9eb,
+  100: #bfc8cc,
+  200: #94a4ab,
+  300: #698089,
+  400: #48646f,
+  500: #284956,
+  600: #24424f,
+  700: #1e3945,
+  800: #18313c,
+  900: #0f212b,
+  A100: #6ac5ff,
+  A200: #37b1ff,
+  A400: #049dff,
+  A700: #008eea,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #ffffff,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #ffffff,
+    A700: #ffffff,
+  ),
+);
+
+/* For use in src/lib/core/theming/_palette.scss */
+$blue-accent-palette: (
+  50: #e9f1f3,
+  100: #c9dbe2,
+  200: #a5c4cf,
+  300: #81acbb,
+  400: #669aad,
+  500: #4b889e,
+  600: #448096,
+  700: #3b758c,
+  800: #336b82,
+  900: #235870,
+  A100: #b2e5ff,
+  A200: #7fd4ff,
+  A400: #4cc3ff,
+  A700: #32bbff,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000,
+  ),
+);
+
+/* For use in src/lib/core/theming/_palette.scss */
+$blue-electric-palette: (
+  50: #eff9f8,
+  100: #d7f0ef,
+  200: #bde6e4,
+  300: #a2dbd9,
+  400: #8ed4d0,
+  500: #7accc8,
+  600: #72c7c2,
+  700: #67c0bb,
+  800: #5db9b4,
+  900: #4aada7,
+  A100: #ffffff,
+  A200: #d5fffc,
+  A400: #a2fff9,
+  A700: #89fff7,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #000000,
+    600: #000000,
+    700: #000000,
+    800: #000000,
+    900: #000000,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000,
+  ),
+);
+
+$light-primary: mat.define-palette($green-primary-palette);
+$light-accent: mat.define-palette($green-accent-palette);
 $light-warn: mat.define-palette($orange-palette);
 
 $light-theme: mat.define-light-theme(
@@ -185,8 +353,8 @@ $light-theme: mat.define-light-theme(
 // $dark-primary: mat.define-palette(mat.$pink-palette);
 // $dark-accent: mat.define-palette(mat.$blue-grey-palette);
 
-$dark-primary: mat.define-palette($dark-cyan-palette);
-$dark-accent: mat.define-palette($light-yellow-palette);
+$dark-primary: mat.define-palette($green-primary-palette);
+$dark-accent: mat.define-palette($green-accent-palette);
 $dark-warn: mat.define-palette($orange-palette);
 
 $dark-theme: mat.define-dark-theme(

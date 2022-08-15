@@ -2,6 +2,13 @@
   margin-left: 1rem;
 }
 
+#cv-btn-nav {
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .menu-toggle-div {
   display: flex;
   justify-content: space-between;
