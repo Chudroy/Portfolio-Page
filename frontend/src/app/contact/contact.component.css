@@ -11,7 +11,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 #contact-form {
@@ -21,7 +21,7 @@
   align-items: center;
   width: 80vw;
   max-width: 500px;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 #contact-id {
