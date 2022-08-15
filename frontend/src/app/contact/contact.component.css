@@ -31,12 +31,16 @@
 }
 
 #contact-name {
-  margin-right: 1rem;
-  flex-grow: 1;
+  width: 100%;
 }
 
-#contact-email {
-  flex-grow: 1;
+#contact-email-expanded {
+  width: 100%;
+}
+
+#contact-email-mobile {
+  width: 100%;
+  display: none;
 }
 
 #contact-message {
@@ -53,6 +57,16 @@ mat-icon {
   width: 30px;
 }
 
-/* .social-media-icon {
-  color: grey;
-} */
+table {
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  #contact-email-expanded {
+    display: none;
+  }
+
+  #contact-email-mobile {
+    display: block;
+  }
+}

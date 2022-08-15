@@ -4,36 +4,59 @@
   </div>
 
   <form id="contact-form">
-    <div id="contact-id">
-      <mat-form-field id="contact-name" appearance="fill">
-        <mat-label>What's your name?</mat-label>
-        <input matInput placeholder="Nick" [formControl]="name" required />
-        <mat-error *ngIf="name.invalid">{{ nameError() }}</mat-error>
-      </mat-form-field>
+    <table>
+      <tr>
+        <td>
+          <mat-form-field id="contact-name" appearance="fill">
+            <mat-label>What's your name?</mat-label>
+            <input matInput placeholder="Nick" [formControl]="name" required />
+            <mat-error *ngIf="name.invalid">{{ nameError() }}</mat-error>
+          </mat-form-field>
+        </td>
+        <td>
+          <mat-form-field id="contact-email-expanded" appearance="fill">
+            <mat-label>Enter your email</mat-label>
+            <input
+              matInput
+              placeholder="pat@example.com"
+              [formControl]="email"
+              required
+            />
+            <mat-error *ngIf="email.invalid">{{ emailError() }}</mat-error>
+          </mat-form-field>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <mat-form-field id="contact-email-mobile" appearance="fill">
+            <mat-label>Enter your email</mat-label>
+            <input
+              matInput
+              placeholder="pat@example.com"
+              [formControl]="email"
+              required
+            />
+            <mat-error *ngIf="email.invalid">{{ emailError() }}</mat-error>
+          </mat-form-field>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <mat-form-field id="contact-message" appearance="fill">
+            <mat-label>Leave a message</mat-label>
+            <textarea
+              rows="5"
+              matInput
+              [formControl]="message"
+              required
+              cdkTextareaAutosize
+            ></textarea>
+            <mat-error *ngIf="email.invalid">{{ emailError() }}</mat-error>
+          </mat-form-field>
+        </td>
+      </tr>
+    </table>
 
-      <mat-form-field id="contact-email" appearance="fill">
-        <mat-label>Enter your email</mat-label>
-        <input
-          matInput
-          placeholder="pat@example.com"
-          [formControl]="email"
-          required
-        />
-        <mat-error *ngIf="email.invalid">{{ emailError() }}</mat-error>
-      </mat-form-field>
-    </div>
-
-    <mat-form-field id="contact-message" appearance="fill">
-      <mat-label>Leave a message</mat-label>
-      <textarea
-        rows="5"
-        matInput
-        [formControl]="message"
-        required
-        cdkTextareaAutosize
-      ></textarea>
-      <mat-error *ngIf="email.invalid">{{ emailError() }}</mat-error>
-    </mat-form-field>
     <button mat-raised-button color="accent">Send Message</button>
   </form>
 

@@ -5,7 +5,11 @@
   align-items: center;
 }
 
-#about-img {
+#about-img-top {
+  display: none;
+}
+
+#about-img-side {
   max-width: 500px;
   height: auto;
 }
@@ -13,4 +17,13 @@
 #about-card {
   max-width: 600px;
   text-align: justify;
+}
+
+@media only screen and (max-width: 975px) {
+  #about-img-side {
+    display: none;
+  }
+  #about-img-top {
+    display: block;
+  }
 }
