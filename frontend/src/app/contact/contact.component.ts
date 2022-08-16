@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, Validators } from '@angular/forms';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { SendMessageService } from '../shared/services/send-message.service';
+import { Message } from '../shared/interfaces/message';
 
 @Component({
   selector: 'app-contact',
@@ -7,30 +9,43 @@ import { FormControl, Validators } from '@angular/forms';
   styleUrls: ['./contact.component.css'],
 })
 export class ContactComponent implements OnInit {
-  email = new FormControl('', [Validators.required, Validators.email]);
-  name = new FormControl('', [Validators.required]);
-  message = new FormControl('', [Validators.required]);
+  currentMessage: Message = {
+    name: 'n/a',
+    email: 'n/a',
+    message: 'n/a',
+  };
 
-  constructor() {}
+  sendMessageForm = new FormGroup({
+    name: new FormControl('', [Validators.required]),
+    email: new FormControl('', [Validators.required, Validators.email]),
+    message: new FormControl('', [Validators.required]),
+  });
 
-  ngOnInit(): void {}
-
-  nameError() {
-    if (this.name.hasError('required')) {
-      return 'Required';
-    }
-    return null;
+  get name() {
+    return this.sendMessageForm.get('name');
   }
-  emailError() {
-    if (this.email.hasError('required')) {
-      return 'Required';
-    }
-    return null;
+  get email() {
+    return this.sendMessageForm.get('email');
   }
-  messageError() {
-    if (this.message.hasError('required')) {
-      return 'Required';
-    }
-    return null;
+  get message() {
+    return this.sendMessageForm.get('message');
+  }
+
+  constructor(private sendMessageService: SendMessageService) {}
+
+  ngOnInit(): void {
+    this.getCurrentMessage();
+  }
+
+  getCurrentMessage() {
+    this.sendMessageService
+      .getCurrentMessage()
+      .subscribe((message: Message) => {
+        this.currentMessage = message;
+      });
+  }
+
+  onSubmit() {
+    this.sendMessageService.sendMessage(this.sendMessageForm.value);
   }
 }

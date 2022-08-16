@@ -3,14 +3,19 @@
     <h2>Get in touch</h2>
   </div>
 
-  <form id="contact-form">
+  <form id="contact-form" [formGroup]="sendMessageForm" (ngSubmit)="onSubmit()">
     <table>
       <tr>
         <td>
           <mat-form-field id="contact-name" appearance="fill">
             <mat-label>What's your name?</mat-label>
-            <input matInput placeholder="Nick" [formControl]="name" required />
-            <mat-error *ngIf="name.invalid">{{ nameError() }}</mat-error>
+            <input
+              matInput
+              placeholder="Nick"
+              formControlName="name"
+              required
+            />
+            <mat-error *ngIf="name!.invalid">Required</mat-error>
           </mat-form-field>
         </td>
         <td>
@@ -19,10 +24,10 @@
             <input
               matInput
               placeholder="pat@example.com"
-              [formControl]="email"
+              formControlName="email"
               required
             />
-            <mat-error *ngIf="email.invalid">{{ emailError() }}</mat-error>
+            <mat-error *ngIf="email!.invalid">Required</mat-error>
           </mat-form-field>
         </td>
       </tr>
@@ -33,10 +38,10 @@
             <input
               matInput
               placeholder="pat@example.com"
-              [formControl]="email"
+              formControlName="email"
               required
             />
-            <mat-error *ngIf="email.invalid">{{ emailError() }}</mat-error>
+            <mat-error *ngIf="email!.invalid">Required</mat-error>
           </mat-form-field>
         </td>
       </tr>
@@ -47,18 +52,32 @@
             <textarea
               rows="5"
               matInput
-              [formControl]="message"
+              formControlName="message"
               required
               cdkTextareaAutosize
             ></textarea>
-            <mat-error *ngIf="email.invalid">{{ emailError() }}</mat-error>
+            <mat-error *ngIf="email!.invalid">Required</mat-error>
           </mat-form-field>
         </td>
       </tr>
     </table>
 
-    <button mat-raised-button color="accent">Send Message</button>
+    <button
+      mat-raised-button
+      type="submit"
+      [disabled]="!sendMessageForm.valid"
+      color="accent"
+    >
+      Send Message
+    </button>
   </form>
+
+  <div>
+    <h2>Messages</h2>
+    <p>{{ currentMessage.name }}</p>
+    <p>{{ currentMessage.email }}</p>
+    <p>{{ currentMessage.message }}</p>
+  </div>
 
   <div id="curriculum">
     <h2>Check out my curriculum</h2>

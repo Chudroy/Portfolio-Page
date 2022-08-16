@@ -36,6 +36,11 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
+app.post("/send-message", (req, res, next) => {
+  console.log("working");
+  console.log(req.body);
+});
+
 // app.use("/", indexRouter);
 // app.use("/users", usersRouter);
 
