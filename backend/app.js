@@ -2,6 +2,7 @@ if (process.env.NODE_ENV !== "production") {
   require("dotenv").config();
 }
 
+const bodyparser = require("body-parser");
 var createError = require("http-errors");
 var express = require("express");
 var path = require("path");
@@ -24,6 +25,10 @@ mongoose
     console.log(err);
   });
 
+// routers
+
+const messageRouter = require("./routes/message");
+
 var app = express();
 
 // view engine setup
@@ -33,6 +38,7 @@ app.set("view engine", "jade");
 app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+app.use(bodyparser.json());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
@@ -45,9 +51,12 @@ app.post("/send-message", (req, res, next) => {
 // app.use("/users", usersRouter);
 
 app.use(express.static("public"));
+
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "public/index.html"));
 });
+
+app.use("/send-message", messageRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
