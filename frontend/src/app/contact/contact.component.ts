@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { SendMessageService } from '../shared/services/send-message.service';
 import { Message } from '../shared/interfaces/message';
+import { tap } from 'rxjs';
 
 @Component({
   selector: 'app-contact',
@@ -10,6 +11,7 @@ import { Message } from '../shared/interfaces/message';
 })
 export class ContactComponent implements OnInit {
   currentMessage: Message = {
+    id: 0,
     name: 'n/a',
     email: 'n/a',
     message: 'n/a',
@@ -38,14 +40,13 @@ export class ContactComponent implements OnInit {
   }
 
   getCurrentMessage() {
-    this.sendMessageService
-      .getCurrentMessage()
-      .subscribe((message: Message) => {
-        this.currentMessage = message;
-      });
+    this.sendMessageService.getCurrentMessage().subscribe();
   }
 
   onSubmit() {
-    this.sendMessageService.sendMessage(this.sendMessageForm.value);
+    this.sendMessageService.sendMessage(this.sendMessageForm.value).subscribe();
+
+    this.currentMessage = this.sendMessageForm.value as Message;
+    this.getCurrentMessage();
   }
 }

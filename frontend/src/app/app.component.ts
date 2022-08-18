@@ -1,6 +1,7 @@
 import { OverlayContainer } from '@angular/cdk/overlay';
 import { Component, HostBinding, OnInit } from '@angular/core';
 import { DarkModeService } from './shared/services/dark-mode.service';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -11,10 +12,13 @@ export class AppComponent implements OnInit {
   @HostBinding('class') className = '';
   constructor(
     private darkModeService: DarkModeService,
-    private overlay: OverlayContainer
+    private overlay: OverlayContainer,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
+    this.router.navigate(['']);
+
     this.darkModeService.darkMode$.subscribe((darkMode) => {
       this.className = darkMode ? '' : this.lightClassName;
       if (darkMode) {

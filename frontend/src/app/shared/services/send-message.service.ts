@@ -6,32 +6,38 @@ import {
 } from '@angular/common/http';
 
 import { Observable, throwError } from 'rxjs';
-import { catchError, retry } from 'rxjs/operators';
+import { catchError, retry, tap } from 'rxjs/operators';
 import { Message } from '../interfaces/message';
 
 @Injectable({
   providedIn: 'root',
 })
 export class SendMessageService {
-  private messageUrl = 'api/sendMessage';
+  private messageUrl = 'http://localhost:3000/send-message';
+  private res!: Message;
+
   constructor(private http: HttpClient) {}
 
   getCurrentMessage() {
-    return this.http
-      .get<Message>(this.messageUrl)
-      .pipe(catchError(this.handleError));
+    return this.http.get<any>(this.messageUrl).pipe(
+      tap((msg) => {
+        console.log(msg);
+      }),
+      catchError(this.handleError)
+    );
   }
 
-  sendMessage(messageObject: object) {
-    // const httpOptions = {
-    //   headers: new HttpHeaders({
-    //     'Content-Type': 'application/json',
-    //   }),
-    // };
+  sendMessage(messageObject: any) {
+    const httpOptions = {
+      observe: 'response' as const,
+    };
 
-    this.http
-      .post(this.messageUrl, messageObject)
-      .pipe(catchError(this.handleError));
+    return this.http.post<any>(this.messageUrl, messageObject).pipe(
+      tap((msg) => {
+        console.log(msg);
+      }),
+      catchError(this.handleError)
+    );
   }
 
   private handleError(error: HttpErrorResponse) {

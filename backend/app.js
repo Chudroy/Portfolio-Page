@@ -3,13 +3,14 @@ if (process.env.NODE_ENV !== "production") {
 }
 
 const bodyparser = require("body-parser");
-var createError = require("http-errors");
-var express = require("express");
-var path = require("path");
-var cookieParser = require("cookie-parser");
-var logger = require("morgan");
+const createError = require("http-errors");
+const express = require("express");
+const path = require("path");
+const cookieParser = require("cookie-parser");
+const logger = require("morgan");
 const mongoose = require("mongoose");
 
+// connect to mongoose
 const { DB_URL } = process.env;
 
 mongoose
@@ -26,15 +27,16 @@ mongoose
   });
 
 // routers
-
 const messageRouter = require("./routes/message");
 
+//app
 var app = express();
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "jade");
 
+// define middlware
 app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -42,21 +44,14 @@ app.use(bodyparser.json());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
-app.post("/send-message", (req, res, next) => {
-  console.log("working");
-  console.log(req.body);
-});
-
-// app.use("/", indexRouter);
-// app.use("/users", usersRouter);
-
+// use files in public
 app.use(express.static("public"));
+
+app.use("/send-message", messageRouter);
 
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "public/index.html"));
 });
-
-app.use("/send-message", messageRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

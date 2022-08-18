@@ -3,7 +3,8 @@ import { MediaMatcher } from '@angular/cdk/layout';
 import { ChangeDetectorRef, OnDestroy } from '@angular/core';
 import { Location } from '@angular/common';
 import { DarkModeService } from '../shared/services/dark-mode.service';
-
+import { Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-navigation',
   templateUrl: './navigation.component.html',
@@ -30,7 +31,9 @@ export class NavigationComponent implements OnDestroy {
     changeDetectorRef: ChangeDetectorRef,
     media: MediaMatcher,
     private location: Location,
-    private darkModeService: DarkModeService
+    private darkModeService: DarkModeService,
+    private router: Router,
+    private activatedRoute: ActivatedRoute
   ) {
     this.mobileQuery = media.matchMedia('(max-width: 600px)');
     this._mobileQueryListener = () => changeDetectorRef.detectChanges();
@@ -41,10 +44,17 @@ export class NavigationComponent implements OnDestroy {
     this.mobileQuery.removeListener(this._mobileQueryListener);
   }
 
-  scroll(el: string) {
-    const scrollTo = document.getElementById(el);
+  scroll(url: string) {
+    const scrollTo = document.getElementById(url);
     scrollTo?.scrollIntoView({ behavior: 'smooth' });
-    this.location.replaceState(el);
+
+    const newUrl = this.router
+      .createUrlTree([url], {
+        relativeTo: this.activatedRoute,
+      })
+      .toString();
+
+    this.location.go(newUrl);
   }
 
   toggleDarkMode($event: any) {

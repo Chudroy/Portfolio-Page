@@ -57,7 +57,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
   imports: [
     BrowserModule,
     HttpClientModule,
-    HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService),
+    // HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService),
     AppRoutingModule,
     FlexLayoutModule,
     BrowserAnimationsModule,
