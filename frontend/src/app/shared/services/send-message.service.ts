@@ -8,21 +8,23 @@ import {
 import { Observable, throwError } from 'rxjs';
 import { catchError, retry, tap } from 'rxjs/operators';
 import { Message } from '../interfaces/message';
+import { isDevMode } from '@angular/core';
 
 @Injectable({
   providedIn: 'root',
 })
 export class SendMessageService {
-  private messageUrl = 'http://localhost:3000/send-message';
+  private messageUrl = isDevMode()
+    ? 'http://localhost:3000/send-message'
+    : '/send-message';
+
   private res!: Message;
 
   constructor(private http: HttpClient) {}
 
   getCurrentMessage() {
     return this.http.get<any>(this.messageUrl).pipe(
-      tap((msg) => {
-        console.log(msg);
-      }),
+      tap((msg) => {}),
       catchError(this.handleError)
     );
   }
@@ -32,12 +34,12 @@ export class SendMessageService {
       observe: 'response' as const,
     };
 
-    return this.http.post<any>(this.messageUrl, messageObject).pipe(
-      tap((msg) => {
-        console.log(msg);
-      }),
-      catchError(this.handleError)
-    );
+    return this.http
+      .post<any>(this.messageUrl, messageObject, httpOptions)
+      .pipe(
+        tap((msg) => {}),
+        catchError(this.handleError)
+      );
   }
 
   private handleError(error: HttpErrorResponse) {
@@ -54,7 +56,9 @@ export class SendMessageService {
     }
     // Return an observable with a user-facing error message.
     return throwError(
-      () => new Error('Something bad happened; please try again later.')
+      () =>
+        new Error(`Something bad happened; please try again later. Status: ${error.status}
+      `)
     );
   }
 }

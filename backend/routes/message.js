@@ -16,7 +16,7 @@ router.get("/", cors(corsOptions), function (req, res, next) {
   res.json({ message: "hit the message GET route" });
 });
 
-router.post("/", cors(corsOptions), function (req, res, next) {
+router.post("/", cors(corsOptions), async function (req, res, next) {
   console.log(req.body);
 
   //define transporter
@@ -40,11 +40,16 @@ router.post("/", cors(corsOptions), function (req, res, next) {
   };
 
   transporter.sendMail(mailData, function (err, info) {
-    if (err) console.log("NodeMail", err);
-    else console.log("NodeMail", info);
+    if (err) {
+      console.log(err);
+      return res.status(500).json({ message: err });
+    } else if (info) {
+      console.log(info);
+      return res.status(200).json({ message: info });
+    } else {
+      res.json({ message: "unable to confirm or deny message sent" });
+    }
   });
-
-  res.json({ message: "hit the message POST route" });
 });
 
 module.exports = router;
