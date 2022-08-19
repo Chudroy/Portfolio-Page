@@ -133,7 +133,7 @@ $dark-yellow-palette: (
   ),
 );
 
-$orange-palette: (
+$orange-dark-palette: (
   50: #faede1,
   100: #f3d2b3,
   200: #ebb581,
@@ -334,9 +334,9 @@ $blue-electric-palette: (
   ),
 );
 
-$light-primary: mat.define-palette($green-primary-palette);
-$light-accent: mat.define-palette($green-accent-palette);
-$light-warn: mat.define-palette($orange-palette);
+$light-primary: mat.define-palette(mat.$deep-orange-palette);
+$light-accent: mat.define-palette(mat.$lime-palette);
+$light-warn: mat.define-palette(mat.$red-palette);
 
 $light-theme: mat.define-light-theme(
   (
@@ -353,9 +353,9 @@ $light-theme: mat.define-light-theme(
 // $dark-primary: mat.define-palette(mat.$pink-palette);
 // $dark-accent: mat.define-palette(mat.$blue-grey-palette);
 
-$dark-primary: mat.define-palette($green-primary-palette);
-$dark-accent: mat.define-palette($green-accent-palette);
-$dark-warn: mat.define-palette($orange-palette);
+$dark-primary: mat.define-palette(mat.$deep-orange-palette);
+$dark-accent: mat.define-palette(mat.$lime-palette);
+$dark-warn: mat.define-palette(mat.$red-palette);
 
 $dark-theme: mat.define-dark-theme(
   (
