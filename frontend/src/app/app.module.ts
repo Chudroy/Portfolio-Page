@@ -47,6 +47,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -98,6 +99,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     MatMenuModule,
     MatSlideToggleModule,
     MatSnackBarModule,
+    MatButtonToggleModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

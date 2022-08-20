@@ -33,9 +33,7 @@ export class ContactComponent implements OnInit {
     private _snackBar: MatSnackBar
   ) {}
 
-  ngOnInit(): void {
-    this.getCurrentMessage();
-  }
+  ngOnInit(): void {}
 
   openSnackBar(msg: string) {
     this._snackBar.open(msg, 'Close', { duration: 4000 });

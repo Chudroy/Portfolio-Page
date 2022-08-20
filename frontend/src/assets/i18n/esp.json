@@ -11,74 +11,80 @@
   "ABOUT": {
     "TITLE": "Sobre mÍ",
     "SUBTITLE": "Puedes llamarme Nico",
-    "DESCRIPTION": "Full stack developer, videogame developer, English teacher, artist, generally curious about everything. Born in London, UK, I've lived in Bilbao since I was 12. I studied Fine Arts at University, and and fell in love with creative coding. Since then, I've gone to study front end, back end, video game development and machine learning, while working as an English teacher. At this point, my favourite art form is code."
+    "DESCRIPTION": "Desarrollador full stack, desarrollador de videojuegos, profesor de inglés, artista, en general curioso por todo. Nacido en Londres, Reino Unido, vivo en Bilbao desde los 12 años. Estudié Bellas Artes en la Universidad y me enamoré de la programación creativa. Desde entonces, he ido a estudiar front end, back end, desarrollo de videojuegos y machine learning, mientras trabajaba como profesor de inglés. En este punto, mi forma de arte favorita es el código."
   },
   "WORK": {
     "TITLE": "Trabajo",
-    "DESCRIPTION": "Here's a showcase of some projects I'm proud of. Since first becoming interested in coding in 2020, I've explored a lot of different fields, trying to find what I have an affinity for and what I'm motivated by (and what I'm not! 😀). During this time, I've discovered design patterns and the SOLID principles, which I'm very interested in, and I've also learned a lot about structuring the code of a project. At the same time, I've dived into data structures and algorithms, balancing the study of computer science fundamentals with project based learning. Currently, I'm challenging myself to learn new concepts using just documentation, without courses, to try and maximize learning efficiency, and to become independent of tutorials and courses as much as possible (i.e: escaping tutorial hell)."
+    "DESCRIPTION": {
+      "P1": "Aquí hay una muestra de algunos proyectos de los que estoy orgulloso. Desde que me interesé por primera vez en la programación en 2020, he explorado muchos campos diferentes, tratando de encontrar aquello por lo que tengo afinidad y lo que me motiva (¡y lo que no! 😀). Durante este tiempo, he descubierto los patrones de diseño y los principios SOLID, que me interesan mucho, y también he aprendido mucho sobre cómo estructurar el código de un proyecto.",
+      "P2": "Al mismo tiempo, me he sumergido en estructuras de datos y algoritmos, equilibrando el estudio de los fundamentos de la informática con el aprendizaje basado en proyectos. Actualmente, me desafío a mí mismo a aprender nuevos conceptos usando solo documentación, sin cursos, para tratar de maximizar la eficiencia del aprendizaje y ser lo más independiente posible de los tutoriales y cursos (es decir, escapar del infierno de los tutoriales)."
+    }
   },
   "HIGHLIGHTED": {
     "TITLE": "Proyectos Destacados",
     "WEB_DEV": {
       "TITLE": "Desarrollo web",
       "SUBTITLE": "Dedicado a los barrios del centro de Bilbao",
-      "DESCRIPTION": "A forum aimed towards connecting the citizens of where I currently live: Bilbao, Basque Country. A user can create a post linked to a specific neighbourhood, and filter posts by neighbourhood or the encompassing district. This website contains all features for a fully functional, secure website.",
+      "DESCRIPTION": "Un foro destinado a conectar a los ciudadanos del lugar donde vivo actualmente: Bilbao, País Vasco. Un usuario puede crear una publicación vinculada a un barrio específico y filtrar las publicaciones por barrio o el distrito que lo engloba. Este proyecto contiene todas las funciones para una página web completamente funcional y seguro.",
       "WEBSITE_BUTTON": "PAGINA WEB"
     },
     "GAME_DEV": {
       "TITLE": "Desarrollo de Videojuegos",
       "SUBTITLE": "Shooter 2D de Horror",
-      "DESCRIPTION": "Get Inside was my first indie video-game. Everything in this game was made by me, except for the music and concept art. The objective is to make it to your home, traversing isolated villages in a heavily forested area, while being attacked by paranormal entities.",
+      "DESCRIPTION": "Get Inside fue mi primer videojuego independiente. Todo en este juego fue hecho por mí, excepto la música y el arte conceptual. El objetivo es llegar a tu hogar, atravesando aldeas aisladas en un área boscosa, mientras eres atacado por entidades paranormales.",
       "PLAY_BUTTON": "JUGAR"
     },
     "CREATIVE_CODING": {
       "SUBTITLE": "Simulación de partículas",
-      "DESCRIPTION": "Procedurally Generated animation using the <a href='https://p5js.org/'> P5.js </a> library. Semi-translucent particles are attracted to gravitational focal points, producing surprisingly complex symmetrical imagery."
+      "DESCRIPTION": "Animación generada proceduralmente utilizando la biblioteca <a href='https://p5js.org/' target='_blank'> P5.js </a>. Las partículas semitranslúcidas son atraídas por los puntos focales gravitacionales, produciendo imágenes simétricas sorprendentemente complejas."
     },
     "ART": {
       "TITLE": "Arte",
       "SUBTITLE": "Modelos matemáticos en 3D",
-      "DESCRIPTION": "A Collection of ~17 <a href='https://en.wikipedia.org/wiki/Attractor'>Strange Attractors</a> made using Animation Nodes in Blender, subsequently used in the art for the boardgame <a href='https://boardgamegeek.com/boardgame/344575/outside-beyond-scp-facilities'> Outside: Beyond the SCP facilities (2022)</a> and for video animations of my own personal creation, also.",
+      "DESCRIPTION": "Una colección de ~17 <a href='https://en.wikipedia.org/wiki/Attractor' target='_blank'>Atractores extraños</a> creados con Animation Nodes en Blender, que posteriormente se usaron en el arte del juego de mesa <a href= 'https://boardgamegeek.com/boardgame/344575/outside-beyond-scp-facilities' target='_blank'> Afuera: Más allá de las instalaciones de SCP (2022)</a> y también para animaciones en video de mi propia creación personal.",
       "BLENDER": "ARCHIVOS BLENDER"
     }
   },
   "MORE_PROJECTS": {
+    "TITLE": "Más Proyectos",
+    "SUBTITLE": "Aquí hay unos cuantos otros proyectos que he hecho.",
     "PORTFOLIO": {
-      "TITLE": "Esta página!",
+      "TITLE": "¡Esta página!",
       "SUBTITLE": "Página web",
-      "DESCRIPTION": "This portfolio is a project of its own! To make this website, I decided to learn to use Angular and its dependency, RxJS, to make it."
+      "DESCRIPTION": "¡Este portfolio es un proyecto en sí mismo! Para hacer este sitio web, decidí aprender a usar Angular y su dependencia, RxJS, para hacerlo."
     },
     "POINT_AND_CLICK": {
       "SUBTITLE": "Infraestructura para un videojuego",
-      "DESCRIPTION": "This project in the making consists of the necessary Infrastructure to implement a modern point and click videogame: 3D space navigation, usable objects, solvable puzzles, inventory system..."
+      "DESCRIPTION": "Este proyecto en proceso consta de la Infraestructura necesaria para implementar un videojuego point and click moderno: navegación espacial 3D, objetos utilizables, púzles solucionables, sistema de inventario..."
     },
     "MEAN_TEMPLATE": {
       "TITLE": "Modelo para un proyecto MEAN Stack",
       "SUBTITLE": "Modelo de proyecto",
-      "DESCRIPTION": "A fully functional project template to get a MEAN Stack project quickly up and running."
+      "DESCRIPTION": "Una plantilla de proyecto completamente funcional para poner en marcha rápidamente un proyecto MEAN Stack."
     },
     "PREVELLION": {
       "SUBTITLE": "Video de Musica",
-      "DESCRIPTION": "I automated the process for the creation of an AI Generated video used for the music video of the song \"Prevellion\" by the funk pop group Withredd, using a python package to connect to the Gaugan AI website by Nvidia."
+      "DESCRIPTION": "Automaticé el proceso para la creación de un video generado por IA utilizado para el video de música de la canción \"Prevellion\" del grupo de prog rock Withredd, utilizando un paquete de python para conectarme a la página web de Gaugan AI de Nvidia."
     },
     "DOBBLE": {
       "TITLE": "Generador de Dobble",
       "SUBTITLE": "Página Web, Generador de Juego de Mesa",
-      "DESCRIPTION": "A website to create your own version of the popular boardgame Dobble, using custom images."
+      "DESCRIPTION": "Una página web para crear tu propia versión del popular juego de mesa Dobble, utilizando imágenes personalizadas."
     },
     "ALGORITHMIC_BOTANY": {
       "TITLE": "Botánica Algorítmica",
       "SUBTITLE": "Creative Coding, Proyecto Artístico",
-      "DESCRIPTION": "A procedural animation, consisting of the creation of a pattern commonly found in plants and flowers, calculated using the golden ratio."
+      "DESCRIPTION": "Una animación procedural, que consiste en la creación de un patrón que se encuentra comúnmente en plantas y flores, calculado utilizando la proporción áurea."
     }
   },
   "CONTACT": {
+    "TITLE": "Ponte en contacto",
     "FORM": {
-      "TITLE": "Ponte en contacto",
       "NAME_PROMPT": "¿Cómo te llamas?",
-      "EMAIL_PROMPT": "Introduzca su correo",
+      "EMAIL_PROMPT": "Introduce tu correo",
       "MESSAGE_PROMPT": "Deja un mensaje",
-      "SEND_BUTTON": "Mandar Mensaje"
+      "SEND_BUTTON": "Mandar Mensaje",
+      "ERROR_MESSAGE": "Campo Obligatorio"
     },
     "CURRICULUM": {
       "TITLE": "Échale un vistazo a mi currículum",

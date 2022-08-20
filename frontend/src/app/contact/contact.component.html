@@ -1,6 +1,6 @@
 <div id="contact" class="full-page">
   <div id="contact-form-intro">
-    <h2>Get in touch</h2>
+    <h2>{{ "CONTACT.TITLE" | translate }}</h2>
   </div>
 
   <form id="contact-form" [formGroup]="sendMessageForm" (ngSubmit)="onSubmit()">
@@ -8,14 +8,16 @@
       <tr>
         <td>
           <mat-form-field id="contact-name" appearance="fill" color="accent">
-            <mat-label>What's your name?</mat-label>
+            <mat-label>{{ "CONTACT.FORM.NAME_PROMPT" | translate }}</mat-label>
             <input
               matInput
               placeholder="Nick"
               formControlName="name"
               required
             />
-            <mat-error *ngIf="name!.invalid">Required</mat-error>
+            <mat-error *ngIf="name!.invalid">{{
+              "CONTACT.FORM.ERROR_MESSAGE" | translate
+            }}</mat-error>
           </mat-form-field>
         </td>
         <td>
@@ -24,14 +26,16 @@
             appearance="fill"
             color="accent"
           >
-            <mat-label>Enter your email</mat-label>
+            <mat-label>{{ "CONTACT.FORM.EMAIL_PROMPT" | translate }}</mat-label>
             <input
               matInput
               placeholder="pat@example.com"
               formControlName="email"
               required
             />
-            <mat-error *ngIf="email!.invalid">Required</mat-error>
+            <mat-error *ngIf="email!.invalid">{{
+              "CONTACT.FORM.ERROR_MESSAGE" | translate
+            }}</mat-error>
           </mat-form-field>
         </td>
       </tr>
@@ -42,21 +46,25 @@
             appearance="fill"
             color="accent"
           >
-            <mat-label>Enter your email</mat-label>
+            <mat-label>{{ "CONTACT.FORM.EMAIL_PROMPT" | translate }}</mat-label>
             <input
               matInput
               placeholder="pat@example.com"
               formControlName="email"
               required
             />
-            <mat-error *ngIf="email!.invalid">Required</mat-error>
+            <mat-error *ngIf="email!.invalid">{{
+              "CONTACT.FORM.ERROR_MESSAGE" | translate
+            }}</mat-error>
           </mat-form-field>
         </td>
       </tr>
       <tr>
         <td colspan="2">
           <mat-form-field id="contact-message" appearance="fill" color="accent">
-            <mat-label>Leave a message</mat-label>
+            <mat-label>{{
+              "CONTACT.FORM.MESSAGE_PROMPT" | translate
+            }}</mat-label>
             <textarea
               rows="5"
               matInput
@@ -64,7 +72,9 @@
               required
               cdkTextareaAutosize
             ></textarea>
-            <mat-error *ngIf="email!.invalid">Required</mat-error>
+            <mat-error *ngIf="email!.invalid">{{
+              "CONTACT.FORM.ERROR_MESSAGE" | translate
+            }}</mat-error>
           </mat-form-field>
         </td>
       </tr>
@@ -76,17 +86,19 @@
       [disabled]="!sendMessageForm.valid"
       color="accent"
     >
-      Send Message
+      {{ "CONTACT.FORM.SEND_BUTTON" | translate }}
     </button>
   </form>
 
   <div id="curriculum">
-    <h2>Check out my curriculum</h2>
-    <button mat-raised-button color="accent">Curriculum</button>
+    <h2>{{ "CONTACT.CURRICULUM.TITLE" | translate }}</h2>
+    <button mat-raised-button color="accent">
+      {{ "CONTACT.CURRICULUM.BUTTON" | translate }}
+    </button>
   </div>
 
   <div id="social-media">
-    <h2>Or find me on the internet</h2>
+    <h2>{{ "CONTACT.LINKS.TITLE" | translate }}</h2>
     <div id="social-media-icons">
       <a href="https://github.com/Chudroy" target="_blank">
         <mat-icon color="accent"

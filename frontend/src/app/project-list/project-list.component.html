@@ -1,16 +1,19 @@
 <div id="project-list">
   <div id="projects-intro">
-    <h2>More Projects</h2>
-    <p>Here's a bunch of other stuff that I've made</p>
+    <h2>{{ "MORE_PROJECTS.TITLE" | translate }}</h2>
+    <p>{{ "MORE_PROJECTS.SUBTITLE" | translate }}</p>
   </div>
 
   <div id="projects">
     <mat-card class="project">
-      <mat-card-title>This Website!</mat-card-title>
-      <mat-card-subtitle>Website</mat-card-subtitle>
+      <mat-card-title>{{
+        "MORE_PROJECTS.PORTFOLIO.TITLE" | translate
+      }}</mat-card-title>
+      <mat-card-subtitle>{{
+        "MORE_PROJECTS.PORTFOLIO.SUBTITLE" | translate
+      }}</mat-card-subtitle>
       <mat-card-content
-        >This portfolio is a project of its own! To make this website, I decided
-        to learn to use Angular and its dependency, RxJS, to make it.
+        >{{ "MORE_PROJECTS.PORTFOLIO.DESCRIPTION" | translate }}
       </mat-card-content>
       <mat-card-actions>
         <a
@@ -30,11 +33,11 @@
 
     <mat-card class="project">
       <mat-card-title>Point and Click</mat-card-title>
-      <mat-card-subtitle>Videogame Infrastructure </mat-card-subtitle>
+      <mat-card-subtitle
+        >{{ "MORE_PROJECTS.POINT_AND_CLICK.SUBTITLE" | translate }}
+      </mat-card-subtitle>
       <mat-card-content
-        >This project in the making consists of the necessary Infrastructure to
-        implement a modern point and click videogame: 3D space navigation,
-        usable objects, solvable puzzles, inventory system...
+        >{{ "MORE_PROJECTS.POINT_AND_CLICK.DESCRIPTION" | translate }}
       </mat-card-content>
       <mat-card-actions>
         <a
@@ -51,11 +54,14 @@
     </mat-card>
 
     <mat-card class="project">
-      <mat-card-title>MEAN Stack Project Template</mat-card-title>
-      <mat-card-subtitle>Project template</mat-card-subtitle>
+      <mat-card-title>{{
+        "MORE_PROJECTS.MEAN_TEMPLATE.TITLE" | translate
+      }}</mat-card-title>
+      <mat-card-subtitle>{{
+        "MORE_PROJECTS.MEAN_TEMPLATE.SUBTITLE" | translate
+      }}</mat-card-subtitle>
       <mat-card-content
-        >A fully functional project template to get a MEAN Stack project quickly
-        up and running.
+        >{{ "MORE_PROJECTS.MEAN_TEMPLATE.DESCRIPTION" | translate }}
       </mat-card-content>
       <mat-card-actions>
         <a
@@ -75,12 +81,11 @@
 
     <mat-card class="project">
       <mat-card-title>Prevellion</mat-card-title>
-      <mat-card-subtitle>Music Video</mat-card-subtitle>
+      <mat-card-subtitle>{{
+        "MORE_PROJECTS.PREVELLION.SUBTITLE" | translate
+      }}</mat-card-subtitle>
       <mat-card-content
-        >I automated the process for the creation of an AI Generated video used
-        for the music video of the song "Prevellion" by the funk pop group
-        Withredd, using a python package to connect to the Gaugan AI website by
-        Nvidia.
+        >{{ "MORE_PROJECTS.PREVELLION.DESCRIPTION" | translate }}
       </mat-card-content>
       <mat-card-actions>
         <a
@@ -103,11 +108,14 @@
     </mat-card>
 
     <mat-card class="project">
-      <mat-card-title>Dobble Generator</mat-card-title>
-      <mat-card-subtitle>Website, Boardgame Generator</mat-card-subtitle>
+      <mat-card-title
+        >{{ "MORE_PROJECTS.DOBBLE.TITLE" | translate }}
+      </mat-card-title>
+      <mat-card-subtitle>{{
+        "MORE_PROJECTS.DOBBLE.SUBTITLE" | translate
+      }}</mat-card-subtitle>
       <mat-card-content
-        >A website to create your own version of the popular boardgame Dobble,
-        using custom images.
+        >{{ "MORE_PROJECTS.DOBBLE.DESCRIPTION" | translate }}
       </mat-card-content>
       <mat-card-actions>
         <a
@@ -131,11 +139,14 @@
     </mat-card>
 
     <mat-card class="project">
-      <mat-card-title>Algorithmic Botany</mat-card-title>
-      <mat-card-subtitle>Creative Coding, Art Project</mat-card-subtitle>
+      <mat-card-title>{{
+        "MORE_PROJECTS.ALGORITHMIC_BOTANY.TITLE" | translate
+      }}</mat-card-title>
+      <mat-card-subtitle>{{
+        "MORE_PROJECTS.ALGORITHMIC_BOTANY.SUBTITLE" | translate
+      }}</mat-card-subtitle>
       <mat-card-content
-        >A procedural animation, consisting of the creation of a pattern
-        commonly found in plants and flowers, calculated using the golden ratio.
+        >{{ "MORE_PROJECTS.ALGORITHMIC_BOTANY.DESCRIPTION" | translate }}
       </mat-card-content>
       <mat-card-actions>
         <a

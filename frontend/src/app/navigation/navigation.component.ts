@@ -15,17 +15,9 @@ import { TranslateService } from '@ngx-translate/core';
 export class NavigationComponent implements OnDestroy {
   mobileQuery: MediaQueryList;
 
-  fillerNav = Array.from({ length: 50 }, (_, i) => `Nav Item ${i + 1}`);
-
-  fillerContent = Array.from(
-    { length: 50 },
-    () =>
-      `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-       labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-       laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-       voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-       cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`
-  );
+  moonIcon = 'fa-solid fa-moon fa-xl ';
+  sunIcon = 'fas fa-sun fa-xl';
+  iconClass = this.moonIcon;
 
   private _mobileQueryListener: () => void;
 
@@ -62,6 +54,11 @@ export class NavigationComponent implements OnDestroy {
 
   toggleDarkMode($event: any) {
     this.darkModeService.toggleDarkMode();
+    if (this.iconClass == this.moonIcon) {
+      this.iconClass = this.sunIcon;
+    } else if (this.iconClass == this.sunIcon) {
+      this.iconClass = this.moonIcon;
+    }
   }
 
   changeLanguage(language: string) {

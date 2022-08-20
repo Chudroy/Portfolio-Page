@@ -38,17 +38,20 @@
 
     "CREATIVE_CODING": {
       "SUBTITLE": "Particle Simulations",
-      "DESCRIPTION": "Procedurally Generated animation using the <a href='https://p5js.org/'> P5.js </a> library. Semi-translucent particles are attracted to gravitational focal points, producing surprisingly complex symmetrical imagery."
+      "DESCRIPTION": "Procedurally Generated animation using the <a href='https://p5js.org/' target='_blank'> P5.js </a> library. Semi-translucent particles are attracted to gravitational focal points, producing surprisingly complex symmetrical imagery."
     },
 
     "ART": {
       "TITLE": "Art",
       "SUBTITLE": "3D Mathematical models",
-      "DESCRIPTION": "A Collection of ~17 <a href='https://en.wikipedia.org/wiki/Attractor'>Strange Attractors</a> made using Animation Nodes in Blender, subsequently used in the art for the boardgame <a href='https://boardgamegeek.com/boardgame/344575/outside-beyond-scp-facilities'> Outside: Beyond the SCP facilities (2022)</a> and for video animations of my own personal creation, also.",
+      "DESCRIPTION": "A Collection of ~17 <a href='https://en.wikipedia.org/wiki/Attractor' target='_blank'>Strange Attractors</a> made using Animation Nodes in Blender, subsequently used in the art for the boardgame <a href='https://boardgamegeek.com/boardgame/344575/outside-beyond-scp-facilities' target='_blank'> Outside: Beyond the SCP facilities (2022)</a> and for video animations of my own personal creation, also.",
       "BLENDER": "BLENDER FILES"
     }
   },
   "MORE_PROJECTS": {
+    "TITLE": "More Projects",
+    "SUBTITLE": "Here's a bunch of other stuff that I've made",
+
     "PORTFOLIO": {
       "TITLE": "This Website!",
       "SUBTITLE": "Website",
@@ -79,12 +82,13 @@
     }
   },
   "CONTACT": {
+    "TITLE": "Get in touch",
     "FORM": {
-      "TITLE": "Get in touch",
       "NAME_PROMPT": "What's your name?",
       "EMAIL_PROMPT": "Enter your email",
       "MESSAGE_PROMPT": "Leave a message",
-      "SEND_BUTTON": "Send Message"
+      "SEND_BUTTON": "Send Message",
+      "ERROR_MESSAGE": "Required"
     },
     "CURRICULUM": {
       "TITLE": "Check out my curriculum",
