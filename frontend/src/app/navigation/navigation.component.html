@@ -18,15 +18,18 @@
         class="menu-toggle-div"
         (click)="$event.stopPropagation()"
       >
-        <i class="fa-solid fa-moon fa-lg menu-icon"></i>Dark Mode
+        <i class="fa-solid fa-moon fa-lg menu-icon"></i
+        >{{ "NAVIGATION.DARK_MODE" | translate }}
         <mat-slide-toggle (change)="toggleDarkMode($event)" class="menu-toggle">
         </mat-slide-toggle>
       </div>
 
-      <button mat-menu-item [matMenuTriggerFor]="language">Language</button>
+      <button mat-menu-item [matMenuTriggerFor]="language">
+        {{ "NAVIGATION.LANGUAGE_BUTTON" | translate }}
+      </button>
       <mat-menu #language="matMenu">
-        <button mat-menu-item>ENG</button>
-        <button mat-menu-item>ESP</button>
+        <button mat-menu-item (click)="changeLanguage('en')">ENG</button>
+        <button mat-menu-item (click)="changeLanguage('esp')">ESP</button>
       </mat-menu>
     </mat-menu>
 
@@ -43,7 +46,7 @@
         aria-label="Example icon-button with heart icon"
         (click)="scroll('app-about-me')"
       >
-        About
+        {{ "NAVIGATION.ABOUT_BUTTON" | translate }}
       </button>
       <button
         mat-button
@@ -51,7 +54,7 @@
         aria-label="Example icon-button with share icon"
         (click)="scroll('work')"
       >
-        Work
+        {{ "NAVIGATION.WORK_BUTTON" | translate }}
       </button>
       <button
         mat-button
@@ -59,7 +62,7 @@
         aria-label="Example icon-button with share icon"
         (click)="scroll('contact')"
       >
-        Contact
+        {{ "NAVIGATION.CONTACT_BUTTON" | translate }}
       </button>
       <button
         mat-flat-button
@@ -67,7 +70,7 @@
         aria-label="Example icon-button with share icon"
         color="accent"
       >
-        Curriculum
+        {{ "NAVIGATION.CURRICULUM_BUTTON" | translate }}
       </button>
     </div>
   </mat-toolbar>

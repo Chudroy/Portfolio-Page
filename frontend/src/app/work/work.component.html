@@ -1,28 +1,16 @@
 <div id="work">
   <div id="work-description">
-    <h2>Work</h2>
+    <h2>{{ "WORK.TITLE" | translate }}</h2>
+    <p>{{ "WORK.DESCRIPTION.P1" | translate }}</p>
     <p>
-      Here's a showcase of some projects I'm proud of. Since first becoming
-      interested in coding in 2020, I've explored a lot of different fields,
-      trying to find what I have an affinity for and what I'm motivated by (and
-      what I'm not! 😀). During this time, I've discovered design patterns and
-      the SOLID principles, which I'm very interested in, and I've also learned
-      a lot about structuring the code of a project.
-    </p>
-    <p>
-      At the same time, I've dived into data structures and algorithms,
-      balancing the study of computer science fundamentals with project based
-      learning. Currently, I'm challenging myself to learn new concepts using
-      just documentation, without courses, to try and maximize learning
-      efficiency, and to become independent of tutorials and courses as much as
-      possible (i.e: escaping tutorial hell).
+      {{ "WORK.DESCRIPTION.P2" | translate }}
     </p>
   </div>
 
   <div id="projects">
-    <h2 id="projects-title">Highlighted Projects</h2>
+    <h2 id="projects-title">{{ "HIGHLIGHTED.TITLE" | translate }}</h2>
     <mat-tab-group mat-align-tabs="center">
-      <mat-tab label="Web Development">
+      <mat-tab [label]="'HIGHLIGHTED.WEB_DEV.TITLE' | translate">
         <mat-card class="work-card">
           <div mat-card-image id="web-dev-bg" class="img-bg">
             <img
@@ -32,17 +20,12 @@
             />
           </div>
           <mat-card-title>Bilbao Barrios</mat-card-title>
-          <mat-card-subtitle
-            >Dedicated to the neighbourhoods of central
-            Bilbao</mat-card-subtitle
-          >
+          <mat-card-subtitle>{{
+            "HIGHLIGHTED.WEB_DEV.SUBTITLE" | translate
+          }}</mat-card-subtitle>
           <mat-card-content>
             <p>
-              A forum aimed towards connecting the citizens of where I currently
-              live: Bilbao, Basque Country. A user can create a post linked to a
-              specific neighbourhood, and filter posts by neighbourhood or the
-              encompassing district. This website contains all features for a
-              fully functional, secure website.
+              {{ "HIGHLIGHTED.WEB_DEV.DESCRIPTION" | translate }}
             </p>
           </mat-card-content>
           <mat-divider inset></mat-divider>
@@ -57,7 +40,8 @@
               href="https://bilbao-barrios.herokuapp.com/"
               mat-button
               target="_blank"
-              >LIVE WEBSITE</a
+            >
+              {{ "HIGHLIGHTED.WEB_DEV.WEBSITE_BUTTON" | translate }}</a
             >
           </mat-card-actions>
           <mat-chip-list
@@ -72,7 +56,7 @@
           </mat-chip-list>
         </mat-card>
       </mat-tab>
-      <mat-tab label="Game Development">
+      <mat-tab [label]="'HIGHLIGHTED.GAME_DEV.TITLE' | translate">
         <mat-card class="work-card">
           <div mat-card-image id="game-dev-bg" class="img-bg">
             <img
@@ -82,14 +66,12 @@
             />
           </div>
           <mat-card-title>Get Inside</mat-card-title>
-          <mat-card-subtitle>2D Horror Shooter</mat-card-subtitle>
+          <mat-card-subtitle>{{
+            "HIGHLIGHTED.GAME_DEV.SUBTITLE" | translate
+          }}</mat-card-subtitle>
           <mat-card-content>
             <p>
-              Get Inside was my first indie video-game. Everything in this game
-              was made by me, except for the music and concept art. The
-              objective is to make it to your home, traversing isolated villages
-              in a heavily forested area, while being attacked by paranormal
-              entities.
+              {{ "HIGHLIGHTED.GAME_DEV.DESCRIPTION" | translate }}
             </p>
           </mat-card-content>
           <mat-divider inset></mat-divider>
@@ -104,7 +86,8 @@
               href="https://play.unity.com/mg/other/get-inside-finished"
               target="_blank"
               mat-button
-              >PLAY</a
+            >
+              {{ "HIGHLIGHTED.GAME_DEV.PLAY_BUTTON" | translate }}</a
             >
           </mat-card-actions>
           <mat-chip-list
@@ -124,14 +107,15 @@
             />
           </div>
           <mat-card-title>Particle Attraction</mat-card-title>
-          <mat-card-subtitle>Particle Simulations</mat-card-subtitle>
+          <mat-card-subtitle
+            >{{ "HIGHLIGHTED.CREATIVE_CODING.SUBTITLE" | translate }}
+          </mat-card-subtitle>
           <mat-card-content>
-            <p>
-              Procedurally Generated animation using the
-              <a href="https://p5js.org/"> P5.js </a>
-              library. Semi-translucent particles are attracted to gravitational
-              focal points, producing surprisingly complex symmetrical imagery.
-            </p>
+            <p
+              [innerHTML]="
+                'HIGHLIGHTED.CREATIVE_CODING.DESCRIPTION' | translate
+              "
+            ></p>
           </mat-card-content>
           <mat-divider inset></mat-divider>
           <mat-card-actions>
@@ -160,7 +144,7 @@
           </mat-chip-list>
         </mat-card>
       </mat-tab>
-      <mat-tab label="Art">
+      <mat-tab [label]="'HIGHLIGHTED.ART.TITLE' | translate">
         <mat-card class="work-card">
           <div mat-card-image id="art-bg" class="img-bg">
             <img
@@ -170,21 +154,11 @@
             />
           </div>
           <mat-card-title>Strange Attractors</mat-card-title>
-          <mat-card-subtitle>3D Mathematical models</mat-card-subtitle>
+          <mat-card-subtitle>{{
+            "HIGHLIGHTED.ART.SUBTITLE" | translate
+          }}</mat-card-subtitle>
           <mat-card-content>
-            <p>
-              A Collection of ~17
-              <a href="https://en.wikipedia.org/wiki/Attractor"
-                >Strange Attractors</a
-              >
-              made using Animation Nodes in Blender, subsequently used in the
-              art for the boardgame
-              <a
-                href="https://boardgamegeek.com/boardgame/344575/outside-beyond-scp-facilities"
-                >Outside: Beyond the SCP facilities (2022)</a
-              >
-              and for video animations of my own personal creation, also.
-            </p>
+            <p [innerHTML]="'HIGHLIGHTED.ART.DESCRIPTION' | translate"></p>
           </mat-card-content>
           <mat-divider inset></mat-divider>
           <mat-card-actions>
@@ -192,8 +166,8 @@
               mat-button
               href="https://drive.google.com/drive/folders/19JMqf1qW8T1ymEqFjQ7wXLm2bG3m6BmV?usp=sharing"
               target="_blank"
-              >BLENDER FILES</a
-            >
+              >{{ "HIGHLIGHTED.ART.BLENDER" | translate }}
+            </a>
             <a
               href="https://www.instagram.com/p/CNTDF3JnHEN/?utm_source=ig_web_copy_link"
               target="_blank"

@@ -2,6 +2,7 @@ import { OverlayContainer } from '@angular/cdk/overlay';
 import { Component, HostBinding, OnInit } from '@angular/core';
 import { DarkModeService } from './shared/services/dark-mode.service';
 import { Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -13,8 +14,12 @@ export class AppComponent implements OnInit {
   constructor(
     private darkModeService: DarkModeService,
     private overlay: OverlayContainer,
-    private router: Router
-  ) {}
+    private router: Router,
+    private translateService: TranslateService
+  ) {
+    translateService.addLangs(['en', 'esp']);
+    translateService.use('en');
+  }
 
   ngOnInit(): void {
     this.router.navigate(['']);
