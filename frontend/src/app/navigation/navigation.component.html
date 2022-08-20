@@ -13,8 +13,12 @@
       <mat-icon>language</mat-icon>
     </button>
     <mat-menu #menu="matMenu">
-      <button mat-menu-item (click)="changeLanguage('en')">ENG</button>
-      <button mat-menu-item (click)="changeLanguage('esp')">ESP</button>
+      <button class="menu-btn" mat-menu-item (click)="changeLanguage('en')">
+        English
+      </button>
+      <button class="menu-btn" mat-menu-item (click)="changeLanguage('esp')">
+        Castellano
+      </button>
     </mat-menu>
     <button mat-icon-button (click)="toggleDarkMode($event)">
       <i [class]="iconClass"></i>
