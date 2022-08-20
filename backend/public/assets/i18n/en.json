@@ -1,0 +1,101 @@
+{
+  "NAVIGATION": {
+    "ABOUT_BUTTON": "About",
+    "WORK_BUTTON": "Work",
+    "CONTACT_BUTTON": "Contact",
+    "CURRICULUM_BUTTON": "Curriculum",
+    "DARK_MODE": "Dark Mode",
+    "LANGUAGE_BUTTON": "Language"
+  },
+
+  "ABOUT": {
+    "TITLE": "About",
+    "SUBTITLE": "You can call me Nick",
+    "DESCRIPTION": "Full stack developer, videogame developer, English teacher, artist, generally curious about everything. Born in London, UK, I've lived in Bilbao since I was 12. I studied Fine Arts at University, and and fell in love with creative coding. Since then, I've gone to study front end, back end, video game development and machine learning, while working as an English teacher. At this point, my favourite art form is code."
+  },
+  "WORK": {
+    "TITLE": "Work",
+    "DESCRIPTION": {
+      "P1": "  Here's a showcase of some projects I'm proud of. Since first becoming interested in coding in 2020, I've explored a lot of different fields, trying to find what I have an affinity for and what I'm motivated by (and what I'm not! 😀). During this time, I've discovered design patterns and the SOLID principles, which I'm very interested in, and I've also learned a lot about structuring the code of a project.",
+      "P2": "At the same time, I've dived into data structures and algorithms, balancing the study of computer science fundamentals with project based learning. Currently, I'm challenging myself to learn new concepts using just documentation, without courses, to try and maximize learning efficiency, and to become independent of tutorials and courses as much as possible (i.e: escaping tutorial hell)."
+    }
+  },
+  "HIGHLIGHTED": {
+    "TITLE": "Highlighted projects",
+    "WEB_DEV": {
+      "TITLE": "Web Development",
+      "SUBTITLE": "Dedicated to the neighbourhoods of central Bilbao",
+      "DESCRIPTION": "A forum aimed towards connecting the citizens of where I currently live: Bilbao, Basque Country. A user can create a post linked to a specific neighbourhood, and filter posts by neighbourhood or the encompassing district. This website contains all features for a fully functional, secure website.",
+      "WEBSITE_BUTTON": "LIVE WEBSITE"
+    },
+
+    "GAME_DEV": {
+      "TITLE": "Game Development",
+      "SUBTITLE": "2D Horror Shooter",
+      "DESCRIPTION": "Get Inside was my first indie video-game. Everything in this game was made by me, except for the music and concept art. The objective is to make it to your home, traversing isolated villages in a heavily forested area, while being attacked by paranormal entities.",
+      "PLAY_BUTTON": "PLAY"
+    },
+
+    "CREATIVE_CODING": {
+      "SUBTITLE": "Particle Simulations",
+      "DESCRIPTION": "Procedurally Generated animation using the <a href='https://p5js.org/' target='_blank'> P5.js </a> library. Semi-translucent particles are attracted to gravitational focal points, producing surprisingly complex symmetrical imagery."
+    },
+
+    "ART": {
+      "TITLE": "Art",
+      "SUBTITLE": "3D Mathematical models",
+      "DESCRIPTION": "A Collection of ~17 <a href='https://en.wikipedia.org/wiki/Attractor' target='_blank'>Strange Attractors</a> made using Animation Nodes in Blender, subsequently used in the art for the boardgame <a href='https://boardgamegeek.com/boardgame/344575/outside-beyond-scp-facilities' target='_blank'> Outside: Beyond the SCP facilities (2022)</a> and for video animations of my own personal creation, also.",
+      "BLENDER": "BLENDER FILES"
+    }
+  },
+  "MORE_PROJECTS": {
+    "TITLE": "More Projects",
+    "SUBTITLE": "Here's a bunch of other stuff that I've made",
+
+    "PORTFOLIO": {
+      "TITLE": "This Website!",
+      "SUBTITLE": "Website",
+      "DESCRIPTION": "This portfolio is a project of its own! To make this website, I decided to learn to use Angular and its dependency, RxJS, to make it."
+    },
+    "POINT_AND_CLICK": {
+      "SUBTITLE": "Videogame Infrastructure",
+      "DESCRIPTION": "This project in the making consists of the necessary Infrastructure to implement a modern point and click videogame: 3D space navigation, usable objects, solvable puzzles, inventory system..."
+    },
+    "MEAN_TEMPLATE": {
+      "TITLE": "MEAN Stack Project Template",
+      "SUBTITLE": "Project template",
+      "DESCRIPTION": "A fully functional project template to get a MEAN Stack project quickly up and running."
+    },
+    "PREVELLION": {
+      "SUBTITLE": "Music Video",
+      "DESCRIPTION": "I automated the process for the creation of an AI Generated video used for the music video of the song \"Prevellion\" by the funk pop group Withredd, using a python package to connect to the Gaugan AI website by Nvidia."
+    },
+    "DOBBLE": {
+      "TITLE": "Dobble Generator",
+      "SUBTITLE": "Website, Boardgame Generator",
+      "DESCRIPTION": "A website to create your own version of the popular boardgame Dobble, using custom images."
+    },
+    "ALGORITHMIC_BOTANY": {
+      "TITLE": "Algorithmic Botany",
+      "SUBTITLE": "Creative Coding, Art Project",
+      "DESCRIPTION": "A procedural animation, consisting of the creation of a pattern commonly found in plants and flowers, calculated using the golden ratio."
+    }
+  },
+  "CONTACT": {
+    "TITLE": "Get in touch",
+    "FORM": {
+      "NAME_PROMPT": "What's your name?",
+      "EMAIL_PROMPT": "Enter your email",
+      "MESSAGE_PROMPT": "Leave a message",
+      "SEND_BUTTON": "Send Message",
+      "ERROR_MESSAGE": "Required"
+    },
+    "CURRICULUM": {
+      "TITLE": "Check out my curriculum",
+      "BUTTON": "Curriculum"
+    },
+    "LINKS": {
+      "TITLE": "Or find me on the internet"
+    }
+  }
+}

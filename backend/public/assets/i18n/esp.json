@@ -1,0 +1,97 @@
+{
+  "NAVIGATION": {
+    "ABOUT_BUTTON": "Sobre mÍ",
+    "WORK_BUTTON": "Trabajo",
+    "CONTACT_BUTTON": "Contacto",
+    "CURRICULUM_BUTTON": "Currículum",
+    "DARK_MODE": "Modo Nocturno",
+    "LANGUAGE_BUTTON": "Idioma"
+  },
+
+  "ABOUT": {
+    "TITLE": "Sobre mÍ",
+    "SUBTITLE": "Puedes llamarme Nico",
+    "DESCRIPTION": "Desarrollador full stack, desarrollador de videojuegos, profesor de inglés, artista, en general curioso por todo. Nacido en Londres, Reino Unido, vivo en Bilbao desde los 12 años. Estudié Bellas Artes en la Universidad y me enamoré de la programación creativa. Desde entonces, he ido a estudiar front end, back end, desarrollo de videojuegos y machine learning, mientras trabajaba como profesor de inglés. En este punto, mi forma de arte favorita es el código."
+  },
+  "WORK": {
+    "TITLE": "Trabajo",
+    "DESCRIPTION": {
+      "P1": "Aquí hay una muestra de algunos proyectos de los que estoy orgulloso. Desde que me interesé por primera vez en la programación en 2020, he explorado muchos campos diferentes, tratando de encontrar aquello por lo que tengo afinidad y lo que me motiva (¡y lo que no! 😀). Durante este tiempo, he descubierto los patrones de diseño y los principios SOLID, que me interesan mucho, y también he aprendido mucho sobre cómo estructurar el código de un proyecto.",
+      "P2": "Al mismo tiempo, me he sumergido en estructuras de datos y algoritmos, equilibrando el estudio de los fundamentos de la informática con el aprendizaje basado en proyectos. Actualmente, me desafío a mí mismo a aprender nuevos conceptos usando solo documentación, sin cursos, para tratar de maximizar la eficiencia del aprendizaje y ser lo más independiente posible de los tutoriales y cursos (es decir, escapar del infierno de los tutoriales)."
+    }
+  },
+  "HIGHLIGHTED": {
+    "TITLE": "Proyectos Destacados",
+    "WEB_DEV": {
+      "TITLE": "Desarrollo web",
+      "SUBTITLE": "Dedicado a los barrios del centro de Bilbao",
+      "DESCRIPTION": "Un foro destinado a conectar a los ciudadanos del lugar donde vivo actualmente: Bilbao, País Vasco. Un usuario puede crear una publicación vinculada a un barrio específico y filtrar las publicaciones por barrio o el distrito que lo engloba. Este proyecto contiene todas las funciones para una página web completamente funcional y seguro.",
+      "WEBSITE_BUTTON": "PAGINA WEB"
+    },
+    "GAME_DEV": {
+      "TITLE": "Desarrollo de Videojuegos",
+      "SUBTITLE": "Shooter 2D de Horror",
+      "DESCRIPTION": "Get Inside fue mi primer videojuego independiente. Todo en este juego fue hecho por mí, excepto la música y el arte conceptual. El objetivo es llegar a tu hogar, atravesando aldeas aisladas en un área boscosa, mientras eres atacado por entidades paranormales.",
+      "PLAY_BUTTON": "JUGAR"
+    },
+    "CREATIVE_CODING": {
+      "SUBTITLE": "Simulación de partículas",
+      "DESCRIPTION": "Animación generada proceduralmente utilizando la biblioteca <a href='https://p5js.org/' target='_blank'> P5.js </a>. Las partículas semitranslúcidas son atraídas por los puntos focales gravitacionales, produciendo imágenes simétricas sorprendentemente complejas."
+    },
+    "ART": {
+      "TITLE": "Arte",
+      "SUBTITLE": "Modelos matemáticos en 3D",
+      "DESCRIPTION": "Una colección de ~17 <a href='https://en.wikipedia.org/wiki/Attractor' target='_blank'>Atractores extraños</a> creados con Animation Nodes en Blender, que posteriormente se usaron en el arte del juego de mesa <a href= 'https://boardgamegeek.com/boardgame/344575/outside-beyond-scp-facilities' target='_blank'> Afuera: Más allá de las instalaciones de SCP (2022)</a> y también para animaciones en video de mi propia creación personal.",
+      "BLENDER": "ARCHIVOS BLENDER"
+    }
+  },
+  "MORE_PROJECTS": {
+    "TITLE": "Más Proyectos",
+    "SUBTITLE": "Aquí hay unos cuantos otros proyectos que he hecho.",
+    "PORTFOLIO": {
+      "TITLE": "¡Esta página!",
+      "SUBTITLE": "Página web",
+      "DESCRIPTION": "¡Este portfolio es un proyecto en sí mismo! Para hacer este sitio web, decidí aprender a usar Angular y su dependencia, RxJS, para hacerlo."
+    },
+    "POINT_AND_CLICK": {
+      "SUBTITLE": "Infraestructura para un videojuego",
+      "DESCRIPTION": "Este proyecto en proceso consta de la Infraestructura necesaria para implementar un videojuego point and click moderno: navegación espacial 3D, objetos utilizables, púzles solucionables, sistema de inventario..."
+    },
+    "MEAN_TEMPLATE": {
+      "TITLE": "Modelo para un proyecto MEAN Stack",
+      "SUBTITLE": "Modelo de proyecto",
+      "DESCRIPTION": "Una plantilla de proyecto completamente funcional para poner en marcha rápidamente un proyecto MEAN Stack."
+    },
+    "PREVELLION": {
+      "SUBTITLE": "Video de Musica",
+      "DESCRIPTION": "Automaticé el proceso para la creación de un video generado por IA utilizado para el video de música de la canción \"Prevellion\" del grupo de prog rock Withredd, utilizando un paquete de python para conectarme a la página web de Gaugan AI de Nvidia."
+    },
+    "DOBBLE": {
+      "TITLE": "Generador de Dobble",
+      "SUBTITLE": "Página Web, Generador de Juego de Mesa",
+      "DESCRIPTION": "Una página web para crear tu propia versión del popular juego de mesa Dobble, utilizando imágenes personalizadas."
+    },
+    "ALGORITHMIC_BOTANY": {
+      "TITLE": "Botánica Algorítmica",
+      "SUBTITLE": "Creative Coding, Proyecto Artístico",
+      "DESCRIPTION": "Una animación procedural, que consiste en la creación de un patrón que se encuentra comúnmente en plantas y flores, calculado utilizando la proporción áurea."
+    }
+  },
+  "CONTACT": {
+    "TITLE": "Ponte en contacto",
+    "FORM": {
+      "NAME_PROMPT": "¿Cómo te llamas?",
+      "EMAIL_PROMPT": "Introduce tu correo",
+      "MESSAGE_PROMPT": "Deja un mensaje",
+      "SEND_BUTTON": "Mandar Mensaje",
+      "ERROR_MESSAGE": "Campo Obligatorio"
+    },
+    "CURRICULUM": {
+      "TITLE": "Échale un vistazo a mi currículum",
+      "BUTTON": "Currículum"
+    },
+    "LINKS": {
+      "TITLE": "O encuentrame en internet"
+    }
+  }
+}
