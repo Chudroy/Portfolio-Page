@@ -10,12 +10,13 @@
 }
 
 #about-img-side {
-  max-width: 500px;
-  height: auto;
+  max-height: 450px;
+  width: auto;
+  border-radius: 5%;
 }
 
 #about-card {
-  max-width: 600px;
+  width: 450px;
   text-align: justify;
 }
 
@@ -25,8 +26,13 @@
   }
   #about-img-top {
     display: block;
+    max-height: 450px;
+    width: auto;
   }
   #about-card {
     margin: 3rem;
+    width: min-content;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
   }
 }
