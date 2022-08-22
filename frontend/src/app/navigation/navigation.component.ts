@@ -17,7 +17,7 @@ export class NavigationComponent implements OnDestroy {
 
   moonIcon = 'fa-solid fa-moon fa-xl ';
   sunIcon = 'fas fa-sun fa-xl';
-  iconClass = this.moonIcon;
+  iconClass = this.sunIcon;
 
   private _mobileQueryListener: () => void;
 

@@ -71,6 +71,11 @@ h2 {
   text-align: center;
 }
 
+a {
+  margin-left: 0.5rem;
+  margin-right: 1rem;
+}
+
 @media only screen and (max-width: 1200px) {
   .work-card {
     margin: auto 15vw auto;

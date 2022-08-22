@@ -8,51 +8,23 @@
 // Be sure that you only ever include this mixin once!
 @include mat.core();
 
-//define palettes
-$dark-cyan-palette: (
-  50: #edeff8,
-  100: #d2dae5,
-  200: #b7c0d0,
-  300: #9ba7bb,
-  400: #8593aa,
-  500: #70809a,
-  600: #627188,
-  700: #515e71,
-  800: #414b5b,
-  900: #2e3643,
-  A100: #6296ff,
-  A200: #2f74ff,
-  A400: #0054fb,
-  A700: #004be1,
-  contrast: (
-    50: #ffffff,
-    100: #ffffff,
-    200: #ffffff,
-    300: #ffffff,
-    400: #ffffff,
-    500: #ffffff,
-    600: #ffffff,
-    700: #ffffff,
-    800: #ffffff,
-    900: #ffffff,
-  ),
-);
-
-$light-cyan-palette: (
-  50: #ebecee,
-  100: #cdcfd4,
-  200: #acb0b7,
-  300: #8a909a,
-  400: #717884,
-  500: #58606e,
-  600: #505866,
-  700: #474e5b,
-  800: #3d4451,
-  900: #2d333f,
-  A100: #8eb6ff,
-  A200: #5b95ff,
-  A400: #2874ff,
-  A700: #0e63ff,
+/* For use in src/lib/core/theming/_palette.scss */
+/* For use in src/lib/core/theming/_palette.scss */
+$grey-palette: (
+  50: #ebebeb,
+  100: #cccdcd,
+  200: #abacab,
+  300: #898a89,
+  400: #6f7170,
+  500: #565857,
+  600: #4f504f,
+  700: #454746,
+  800: #3c3d3c,
+  900: #2b2d2c,
+  A100: #8af38a,
+  A200: #5cef5c,
+  A400: #19ff19,
+  A700: #00fe00,
   contrast: (
     50: #000000,
     100: #000000,
@@ -66,154 +38,26 @@ $light-cyan-palette: (
     900: #ffffff,
     A100: #000000,
     A200: #000000,
-    A400: #ffffff,
-    A700: #ffffff,
-  ),
-);
-
-$light-yellow-palette: (
-  50: #fafaf1,
-  100: #f2f2db,
-  200: #eae9c4,
-  300: #e2e0ac,
-  400: #dbda9a,
-  500: #d5d388,
-  600: #d0ce80,
-  700: #cac875,
-  800: #c4c26b,
-  900: #bab758,
-  A100: #ffffff,
-  A200: #fffeed,
-  A400: #fffdba,
-  A700: #fffca1,
-  contrast: (
-    50: #e0e0e0,
-    100: #b3b3b3,
-    200: #808080,
-    300: #4d4d4d,
-    400: #262626,
-    500: #000000,
-    600: #000000,
-    700: #000000,
-    800: #000000,
-    900: #000000,
-  ),
-);
-
-$dark-yellow-palette: (
-  50: #f4f4eb,
-  100: #e3e3ce,
-  200: #d1d1ad,
-  300: #bfbe8c,
-  400: #b1b073,
-  500: #a3a25a,
-  600: #9b9a52,
-  700: #919048,
-  800: #88863f,
-  900: #77752e,
-  A100: #fffdbf,
-  A200: #fffc8c,
-  A400: #fffa59,
-  A700: #fffa40,
-  contrast: (
-    50: #000000,
-    100: #000000,
-    200: #000000,
-    300: #000000,
-    400: #000000,
-    500: #000000,
-    600: #000000,
-    700: #000000,
-    800: #ffffff,
-    900: #ffffff,
-    A100: #000000,
-    A200: #000000,
     A400: #000000,
     A700: #000000,
   ),
 );
 
-$orange-dark-palette: (
-  50: #faede1,
-  100: #f3d2b3,
-  200: #ebb581,
-  300: #e3974f,
-  400: #dd8029,
-  500: #d76a03,
-  600: #d36203,
-  700: #cd5702,
-  800: #c74d02,
-  900: #be3c01,
-  A100: #ffece6,
-  A200: #ffc6b3,
-  A400: #ff9f80,
-  A700: #ff8c67,
-  contrast: (
-    50: #000000,
-    100: #000000,
-    200: #000000,
-    300: #000000,
-    400: #000000,
-    500: #ffffff,
-    600: #ffffff,
-    700: #ffffff,
-    800: #ffffff,
-    900: #ffffff,
-    A100: #000000,
-    A200: #000000,
-    A400: #000000,
-    A700: #000000,
-  ),
-);
-
-$green-primary-palette: (
-  50: #e5ebe9,
-  100: #bfccc8,
-  200: #94aba3,
-  300: #69897e,
-  400: #496f63,
-  500: #295647,
-  600: #244f40,
-  700: #1f4537,
-  800: #193c2f,
-  900: #0f2b20,
-  A100: #6affbe,
-  A200: #37ffa8,
-  A400: #04ff92,
-  A700: #00ea84,
-  contrast: (
-    50: #000000,
-    100: #000000,
-    200: #000000,
-    300: #ffffff,
-    400: #ffffff,
-    500: #ffffff,
-    600: #ffffff,
-    700: #ffffff,
-    800: #ffffff,
-    900: #ffffff,
-    A100: #000000,
-    A200: #000000,
-    A400: #000000,
-    A700: #000000,
-  ),
-);
-
-$green-accent-palette: (
-  50: #f7fcf9,
-  100: #ebf8ef,
-  200: #def4e5,
-  300: #d1efda,
-  400: #c7ebd2,
-  500: #bde8ca,
-  600: #b7e5c5,
-  700: #aee2bd,
-  800: #a6deb7,
-  900: #98d8ab,
+$green-palette: (
+  50: #f9fdf6,
+  100: #effae9,
+  200: #e5f7db,
+  300: #dbf4cc,
+  400: #d3f1c1,
+  500: #cbefb6,
+  600: #c6edaf,
+  700: #beeba6,
+  800: #b8e89e,
+  900: #ace48e,
   A100: #ffffff,
   A200: #ffffff,
   A400: #ffffff,
-  A700: #f7fffa,
+  A700: #fbfff9,
   contrast: (
     50: #000000,
     100: #000000,
@@ -232,110 +76,8 @@ $green-accent-palette: (
   ),
 );
 
-/* For use in src/lib/core/theming/_palette.scss */
-$blue-primary-palette: (
-  50: #e5e9eb,
-  100: #bfc8cc,
-  200: #94a4ab,
-  300: #698089,
-  400: #48646f,
-  500: #284956,
-  600: #24424f,
-  700: #1e3945,
-  800: #18313c,
-  900: #0f212b,
-  A100: #6ac5ff,
-  A200: #37b1ff,
-  A400: #049dff,
-  A700: #008eea,
-  contrast: (
-    50: #000000,
-    100: #000000,
-    200: #000000,
-    300: #ffffff,
-    400: #ffffff,
-    500: #ffffff,
-    600: #ffffff,
-    700: #ffffff,
-    800: #ffffff,
-    900: #ffffff,
-    A100: #000000,
-    A200: #000000,
-    A400: #ffffff,
-    A700: #ffffff,
-  ),
-);
-
-/* For use in src/lib/core/theming/_palette.scss */
-$blue-accent-palette: (
-  50: #e9f1f3,
-  100: #c9dbe2,
-  200: #a5c4cf,
-  300: #81acbb,
-  400: #669aad,
-  500: #4b889e,
-  600: #448096,
-  700: #3b758c,
-  800: #336b82,
-  900: #235870,
-  A100: #b2e5ff,
-  A200: #7fd4ff,
-  A400: #4cc3ff,
-  A700: #32bbff,
-  contrast: (
-    50: #000000,
-    100: #000000,
-    200: #000000,
-    300: #000000,
-    400: #000000,
-    500: #ffffff,
-    600: #ffffff,
-    700: #ffffff,
-    800: #ffffff,
-    900: #ffffff,
-    A100: #000000,
-    A200: #000000,
-    A400: #000000,
-    A700: #000000,
-  ),
-);
-
-/* For use in src/lib/core/theming/_palette.scss */
-$blue-electric-palette: (
-  50: #eff9f8,
-  100: #d7f0ef,
-  200: #bde6e4,
-  300: #a2dbd9,
-  400: #8ed4d0,
-  500: #7accc8,
-  600: #72c7c2,
-  700: #67c0bb,
-  800: #5db9b4,
-  900: #4aada7,
-  A100: #ffffff,
-  A200: #d5fffc,
-  A400: #a2fff9,
-  A700: #89fff7,
-  contrast: (
-    50: #000000,
-    100: #000000,
-    200: #000000,
-    300: #000000,
-    400: #000000,
-    500: #000000,
-    600: #000000,
-    700: #000000,
-    800: #000000,
-    900: #000000,
-    A100: #000000,
-    A200: #000000,
-    A400: #000000,
-    A700: #000000,
-  ),
-);
-
-$light-primary: mat.define-palette(mat.$deep-orange-palette);
-$light-accent: mat.define-palette(mat.$lime-palette);
+$light-primary: mat.define-palette($grey-palette);
+$light-accent: mat.define-palette($green-palette);
 $light-warn: mat.define-palette(mat.$red-palette);
 
 $light-theme: mat.define-light-theme(
@@ -353,8 +95,8 @@ $light-theme: mat.define-light-theme(
 // $dark-primary: mat.define-palette(mat.$pink-palette);
 // $dark-accent: mat.define-palette(mat.$blue-grey-palette);
 
-$dark-primary: mat.define-palette(mat.$deep-orange-palette);
-$dark-accent: mat.define-palette(mat.$lime-palette);
+$dark-primary: mat.define-palette($grey-palette);
+$dark-accent: mat.define-palette($green-palette);
 $dark-warn: mat.define-palette(mat.$red-palette);
 
 $dark-theme: mat.define-dark-theme(
