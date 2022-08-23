@@ -21,6 +21,10 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { WorkComponent } from './work/work.component';
 import { ContactComponent } from './contact/contact.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { ProjectListComponent } from './project-list/project-list.component';
+import { scrollProgressBarComponent } from './scroll-progress-bar/scroll-progress-bar.component';
+import { scrollProgressDirective } from './diretives/scroll-progress.directive';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 // Forms Modules
 import { ReactiveFormsModule } from '@angular/forms';
@@ -31,17 +35,13 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
-import { PortfolioComponent } from './portfolio/portfolio.component';
 import { MatListModule } from '@angular/material/list';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
-import { scrollProgressBarComponent } from './scroll-progress-bar/scroll-progress-bar.component';
-import { scrollProgressDirective } from './diretives/scroll-progress.directive';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatChipsModule } from '@angular/material/chips';
-import { ProjectListComponent } from './project-list/project-list.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatMenuModule } from '@angular/material/menu';

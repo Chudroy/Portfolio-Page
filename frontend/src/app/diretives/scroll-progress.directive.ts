@@ -6,13 +6,12 @@ import { scrollProgressBarService } from '../shared/services/scroll-progress-bar
 export class scrollProgressDirective {
   constructor(private scrollProgressBarService: scrollProgressBarService) {}
   @HostListener('scroll', ['$event'])
-  doSomething(event: any) {
+  ProgressScrollbar(event: any) {
     let winScroll = event.currentTarget.scrollTop;
     let height =
       event.currentTarget.scrollHeight - event.currentTarget.clientHeight;
     let scrolled = (winScroll / height) * 100;
 
     this.scrollProgressBarService.setscrollProgress(scrolled);
-    // document.getElementById('scrollBar')!.style.width = scrolled + '%';
   }
 }
