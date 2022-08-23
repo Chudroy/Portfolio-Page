@@ -2,13 +2,13 @@
 
 [Link to hosted page](https://ngaritagoitia.herokuapp.com/)
 
-This is my portfolio page made with the MEAN stack, but principally it's an Angular project. I made this page over the course of ~three weeks while learning to use the Angular framework. Many components from [Angular Material](https://material.angular.io/components/categories) are used, such as the Navigation Menu, the Card component, the Tab components, Form Inputs, and so on. The colours of the page are customized, and implemented with Angular Material's theming system.
+This is my portfolio page made with the MEAN stack, but principally it's an Angular project. I made this page over the course of ~three weeks while learning to use the Angular framework. Various components from [Angular Material](https://material.angular.io/components/categories) are used. The colours of the page are customized, and implemented with Angular Material's theming system. Additionally, the page layout is optimized for mobile viewing.
 
-The page is available in two languages, English and Spanish. The language may be changed whithout reloading by clicking the globe icon in the navigation bar and choosing a language option.
+The portfolio is available in two languages, English and Spanish. The language may be changed whithout reloading by clicking the globe icon in the navigation bar and choosing a language option. This functionality is implemented with [The internationalization (i18n) library for Angular](https://github.com/ngx-translate/core)
 
 Dark and Light modes are also available by toggling the Sun/Moon icon in the navigation bar. 
 
-Various features of this page implement the [RxJS library.](https://rxjs.dev/), such as:
+Various features of this page implement the [RxJS library](https://rxjs.dev/), such as:
 
 - The Dark/Light mode toggle uses a Behaviour Subject with the default value set to true, so that dark mode is the default.
 
