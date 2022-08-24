@@ -115,12 +115,6 @@ dist
 
 seeds/
 
-
-
-
-
-
-
 # ANGULAR 
 
 .DS_STORE
@@ -181,3 +175,5 @@ baseline.json
 
 # Husky
 .husky/_
+
+*.pdf

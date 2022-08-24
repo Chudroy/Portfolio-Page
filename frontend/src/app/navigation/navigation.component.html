@@ -50,14 +50,7 @@
       >
         {{ "NAVIGATION.CONTACT_BUTTON" | translate }}
       </button>
-      <button
-        mat-flat-button
-        class="example-icon"
-        aria-label="Example icon-button with share icon"
-        color="accent"
-      >
-        {{ "NAVIGATION.CURRICULUM_BUTTON" | translate }}
-      </button>
+      <app-curriculum-download></app-curriculum-download>
     </div>
   </mat-toolbar>
 
@@ -78,7 +71,7 @@
         <a mat-list-item (click)="scroll('about-me')">About Me</a>
         <a mat-list-item (click)="scroll('work')">Work</a>
         <a mat-list-item (click)="scroll('contact')">Contact</a>
-        <a mat-raised-button id="cv-btn-nav" color="accent">Curriculum</a>
+        <app-curriculum-download id="cv-btn-nav"></app-curriculum-download>
       </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content appscrollProgress>

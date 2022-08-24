@@ -18,8 +18,6 @@ export class SendMessageService {
     ? 'http://localhost:3000/send-message'
     : '/send-message';
 
-  private res!: Message;
-
   constructor(private http: HttpClient) {}
 
   getCurrentMessage() {

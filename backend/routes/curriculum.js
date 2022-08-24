@@ -4,7 +4,8 @@ const cors = require("cors");
 
 router.get("/english", cors(), function (req, res, next) {
   const options = {
-    root: "E:/nicol/Documents/Web Dev/MEAN stack/Portfolio Page/backend",
+    // root: "E:/nicol/Documents/Web Dev/MEAN stack/Portfolio Page/backend",
+    root: "E:/nicol/Documents/Web Dev/MEAN stack/Portfolio Page/backend/curriculums",
     dotfiles: "deny",
     headers: {
       "x-timestamp": Date.now(),
@@ -12,10 +13,11 @@ router.get("/english", cors(), function (req, res, next) {
     },
   };
 
-  const fileName = "cvnico1.pdf";
+  const fileName = "cvEng.pdf";
 
   res.sendFile(fileName, options, function (err) {
     if (err) {
+      console.log(err);
       next(err);
     } else {
       console.log("Sent:", fileName);
@@ -25,7 +27,7 @@ router.get("/english", cors(), function (req, res, next) {
 
 router.get("/spanish", cors(), function (req, res, next) {
   const options = {
-    root: "E:/nicol/Documents/Web Dev/MEAN stack/Portfolio Page/backend",
+    root: "E:/nicol/Documents/Web Dev/MEAN stack/Portfolio Page/backend/curriculums",
     dotfiles: "deny",
     headers: {
       "x-timestamp": Date.now(),
@@ -33,7 +35,7 @@ router.get("/spanish", cors(), function (req, res, next) {
     },
   };
 
-  const fileName = "cvnico2.pdf";
+  const fileName = "cvEsp.pdf";
 
   res.sendFile(fileName, options, function (err) {
     if (err) {

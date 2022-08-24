@@ -25,7 +25,8 @@ import { ProjectListComponent } from './project-list/project-list.component';
 import { scrollProgressBarComponent } from './scroll-progress-bar/scroll-progress-bar.component';
 import { scrollProgressDirective } from './diretives/scroll-progress.directive';
 import { PortfolioComponent } from './portfolio/portfolio.component';
-
+import { CurriculumDownloadComponent } from './curriculum-download/curriculum-download.component';
+import { CurriculumDownloadDialogComponent } from './curriculum-download-dialog/curriculum-download-dialog.component';
 // Forms Modules
 import { ReactiveFormsModule } from '@angular/forms';
 
@@ -48,6 +49,8 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -65,6 +68,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     scrollProgressBarComponent,
     scrollProgressDirective,
     ProjectListComponent,
+    CurriculumDownloadComponent,
+    CurriculumDownloadDialogComponent,
   ],
   imports: [
     BrowserModule,
@@ -100,6 +105,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     MatSlideToggleModule,
     MatSnackBarModule,
     MatButtonToggleModule,
+    MatDialogModule,
+    MatCheckboxModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

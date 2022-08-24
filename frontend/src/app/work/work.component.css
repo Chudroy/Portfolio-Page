@@ -51,7 +51,7 @@
 }
 
 .work-card {
-  margin: auto 25vw auto;
+  margin: auto 35vw auto;
   display: flex;
   flex-direction: column;
 }
@@ -74,6 +74,18 @@ h2 {
 a {
   margin-left: 0.5rem;
   margin-right: 1rem;
+}
+
+@media only screen and (max-width: 2400px) {
+  .work-card {
+    margin: auto 30vw auto;
+  }
+}
+
+@media only screen and (max-width: 1800px) {
+  .work-card {
+    margin: auto 20vw auto;
+  }
 }
 
 @media only screen and (max-width: 1200px) {

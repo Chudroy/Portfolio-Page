@@ -1,0 +1,14 @@
+.btn-wrapper {
+  display: inline;
+}
+:host-context(#cv-btn-nav) .btn-wrapper {
+  display: flex;
+  justify-content: center;
+}
+:host-context(#cv-btn-nav) button {
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
