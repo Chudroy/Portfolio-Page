@@ -28,6 +28,7 @@ mongoose
 
 // routers
 const messageRouter = require("./routes/message");
+const curriculumRouter = require("./routes/curriculum");
 
 //app
 var app = express();
@@ -48,6 +49,7 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(express.static("public"));
 
 app.use("/send-message", messageRouter);
+app.use("/download-curriculum", curriculumRouter);
 
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "public/index.html"));
