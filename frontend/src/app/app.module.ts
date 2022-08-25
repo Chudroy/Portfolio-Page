@@ -11,10 +11,6 @@ import { HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
-//CRUD SIMULATION
-import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
-import { InMemoryDataService } from './shared/services/in-memory-data.service';
-
 // Custom Components
 import { AppComponent } from './app.component';
 import { AboutMeComponent } from './about-me/about-me.component';

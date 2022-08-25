@@ -99,5 +99,9 @@
     }
   },
 
-  "CURRICULUM": "Download my curriculum in English or Spanish!"
+  "CURRICULUM": {
+    "HEADER": "Download my curriculum in English or Spanish!",
+    "ENG_BUTTON": "English",
+    "ESP_BUTTON": "Spanish"
+  }
 }

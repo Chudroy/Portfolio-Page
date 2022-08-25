@@ -97,5 +97,11 @@
     "LINKS": {
       "TITLE": "Or find me on the internet"
     }
+  },
+
+  "CURRICULUM": {
+    "HEADER": "Download my curriculum in English or Spanish!",
+    "ENG_BUTTON": "English",
+    "ESP_BUTTON": "Spanish"
   }
 }

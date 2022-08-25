@@ -91,8 +91,12 @@
       "BUTTON": "Currículum"
     },
     "LINKS": {
-      "TITLE": "O encuentrame en internet"
+      "TITLE": "O encuéntrame en internet"
     }
   },
-  "CURRICULUM": "¡Descarga mi currículum en inglés o castellano!"
+  "CURRICULUM": {
+    "HEADER": "¡Descarga mi currículum en inglés o en castellano!",
+    "ENG_BUTTON": "Inglés",
+    "ESP_BUTTON": "Castellano"
+  }
 }
