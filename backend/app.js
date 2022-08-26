@@ -9,6 +9,7 @@ const path = require("path");
 const cookieParser = require("cookie-parser");
 const logger = require("morgan");
 const mongoose = require("mongoose");
+const helmet = require("helmet");
 
 // connect to mongoose
 const { DB_URL } = process.env;
@@ -44,6 +45,10 @@ app.use(express.urlencoded({ extended: false }));
 app.use(bodyparser.json());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
+
+// put on your helmet
+
+app.use(helmet());
 
 // use files in public
 app.use(express.static("public"));
