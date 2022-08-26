@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 97vh;
 }
 
 #about-img-top {
@@ -34,5 +35,9 @@
     width: min-content;
     border-top-left-radius: 5%;
     border-top-right-radius: 5%;
+  }
+
+  #about-me {
+    height: auto;
   }
 }

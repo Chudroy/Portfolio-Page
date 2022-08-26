@@ -2,6 +2,10 @@ body {
   margin: 0;
 }
 
+.full-page {
+  height: 94vh;
+}
+
 /* mat-sidenav-content {
   background: rgb(2, 0, 36);
   background: linear-gradient(
