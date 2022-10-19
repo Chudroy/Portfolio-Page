@@ -71,9 +71,9 @@
       "DESCRIPTION": "I automated the process for the creation of an AI Generated video used for the music video of the song \"Prevellion\" by the funk pop group Withredd, using a python package to connect to the Gaugan AI website by Nvidia."
     },
     "DOBBLE": {
-      "TITLE": "Dobble Generator",
-      "SUBTITLE": "Website, Boardgame Generator",
-      "DESCRIPTION": "A website to create your own version of the popular boardgame Dobble, using custom images."
+      "TITLE": "Github Issue Lister",
+      "SUBTITLE": "Single Page Application, API",
+      "DESCRIPTION": "An SPA that lists the issues and pull requests of any solicited Github Repo."
     },
     "ALGORITHMIC_BOTANY": {
       "TITLE": "Algorithmic Botany",

@@ -33,6 +33,33 @@
     </mat-card>
 
     <mat-card class="project">
+      <mat-card-title
+        >{{ "MORE_PROJECTS.DOBBLE.TITLE" | translate }}
+      </mat-card-title>
+      <mat-card-subtitle>{{
+        "MORE_PROJECTS.DOBBLE.SUBTITLE" | translate
+      }}</mat-card-subtitle>
+      <mat-card-content
+        >{{ "MORE_PROJECTS.DOBBLE.DESCRIPTION" | translate }}
+      </mat-card-content>
+      <mat-card-actions>
+        <a
+          href="https://github.com/Chudroy/Github-Issue-Lister"
+          target="_blank"
+          mat-flat-button
+          color="primary"
+          >GITHUB REPO</a
+        >
+      </mat-card-actions>
+      <mat-chip-list>
+        <mat-chip color="accent" selected>Angular</mat-chip>
+        <mat-chip color="accent" selected>NgRx</mat-chip>
+        <mat-chip color="accent" selected>Nx</mat-chip>
+        <mat-chip color="accent" selected>Github API</mat-chip>
+      </mat-chip-list>
+    </mat-card>
+
+    <mat-card class="project">
       <mat-card-title>Point and Click</mat-card-title>
       <mat-card-subtitle
         >{{ "MORE_PROJECTS.POINT_AND_CLICK.SUBTITLE" | translate }}
@@ -109,39 +136,6 @@
       <mat-chip-list>
         <mat-chip color="accent" selected>Python</mat-chip>
         <mat-chip color="primary">Gaugan</mat-chip>
-      </mat-chip-list>
-    </mat-card>
-
-    <mat-card class="project">
-      <mat-card-title
-        >{{ "MORE_PROJECTS.DOBBLE.TITLE" | translate }}
-      </mat-card-title>
-      <mat-card-subtitle>{{
-        "MORE_PROJECTS.DOBBLE.SUBTITLE" | translate
-      }}</mat-card-subtitle>
-      <mat-card-content
-        >{{ "MORE_PROJECTS.DOBBLE.DESCRIPTION" | translate }}
-      </mat-card-content>
-      <mat-card-actions>
-        <a
-          href="https://github.com/Chudroy/Dobble-Generator"
-          target="_blank"
-          mat-flat-button
-          color="primary"
-          >GITHUB REPO</a
-        >
-        <a
-          href="https://editor.p5js.org/Chudroy/sketches/mVIU2IB0Y"
-          target="_blank"
-          mat-flat-button
-          color="primary"
-          >LIVE WEBSITE</a
-        >
-      </mat-card-actions>
-      <mat-chip-list>
-        <mat-chip color="accent" selected>P5.js</mat-chip>
-        <mat-chip color="primary">Node</mat-chip>
-        <mat-chip color="primary">Express</mat-chip>
       </mat-chip-list>
     </mat-card>
 
