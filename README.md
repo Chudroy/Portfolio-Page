@@ -1,19 +1,23 @@
-Portfolio Page
+# Portfolio Page
 
-ng serve is on port 4200
-node/express server is on port 3000
+[Link to hosted page](https://ngaritagoitia.herokuapp.com/)
 
-To serve on a web hosting site, build your app with ng build first. The output folder is already set to the public folder in the backend folder.
+This is my portfolio page made with the MEAN stack, but principally it's an Angular project. I made this page over the course of ~three weeks while learning to use the Angular framework. Various components from [Angular Material](https://material.angular.io/components/categories) are used. The colours of the page are customized, and implemented with Angular Material's theming system. Additionally, the page layout is optimized for mobile viewing.
 
-The second .gitignore within the backend folder is necessary for example for Heroku, because you have to initialize its git within this folder, ergo
-Heroku won't use the root folder's .gitignore
+The portfolio is available in two languages, English and Spanish. The language may be changed whithout reloading by clicking the globe icon in the navigation bar and choosing a language option. This functionality is implemented with [The internationalization (i18n) library for Angular](https://github.com/ngx-translate/core)
 
-Instructions:
+Dark and Light modes are also available by toggling the Sun/Moon icon in the navigation bar. 
 
-1. Run npm install in the backend folder and frontend folder, respectively.
+Various features of this page implement the [RxJS library](https://rxjs.dev/), such as:
 
-2. create a .env file in the backend folder and include your Mongo Database URI/URL
+- The Dark/Light mode toggle uses a Behaviour Subject with the default value set to true, so that dark mode is the default.
 
-3. Hook it up to the DB_URL variable in the app.js in the backend folder
+- The progress bar that advances according to how far the user has scrolled down the page, also used a behaviour subject, which receives input from a directive that tracks the scroll event on the page.
 
-Any questions, let me know.
+- The HTTP GET request to download the curriculum when the Curriculum button is clicked.
+
+- The HTTP POST request, sent once the send message form is completed and submitted. In the subscribe method, the callback receives a success or error message which is presented in a Snackbar Component at the bottom of the page, once the form is submitted.
+
+
+
+ 
